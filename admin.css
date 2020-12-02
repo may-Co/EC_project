@@ -1,0 +1,60 @@
+
+
+li{
+  list-style: none;
+}
+
+
+/*postNotification*/
+h1 {
+  padding: 0.5em;/*文字周りの余白*/
+  color: #494949;/*文字色*/
+  background: #fffaf4;/*背景色*/
+  border-left: solid 5px #ffaf58;/*左線（実線 太さ 色）*/
+}
+
+textarea{
+  width: 600px;
+  resize : both;
+}
+
+
+a.btn--orange {
+  color: #fff;
+  background-color: #eb6100;
+  border-bottom: 5px solid #b84c00;
+  position:relative;
+  top:auto;
+  left:550px;
+}
+a.btn--orange:hover {
+  margin-top: 3px;
+  color: #fff;
+  background: #f56500;
+  border-bottom: 2px solid #b84c00;
+}
+a.btn--shadow {
+  -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+}
+
+/*user list*/
+h2 {
+  background: linear-gradient(transparent 70%, #a7d6ff 70%);
+}
+
+/*登録商品一覧*/
+h3{
+  border-bottom: solid 3px skyblue;
+  position: relative;
+}
+
+h3:after {
+  position: absolute;
+  content: " ";
+  display: block;
+  border-bottom: solid 3px #ffc778;
+  bottom: -3px;
+  width: 30%;
+
+}
