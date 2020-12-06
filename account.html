@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
-<html lang="ja" dir="ltr">
+<html lang="ja" dir="ltr"xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
   <head>
     <meta charset="utf-8">
     <title>Qoo10への接続</title>
@@ -12,6 +13,9 @@
         <html xmlns:th="http://www.thymeleaf.org"
       xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 <body>
+  
+   <!-- ====テンプレート読み込み==== -->
+   <div th:insert="user/navbar::template"></div>
 
 
 <!--接続状態-->
