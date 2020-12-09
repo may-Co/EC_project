@@ -18,6 +18,11 @@ textarea{
   resize : both;
 }
 
+/*お知らせ入力のタイトル*/
+input.hoge{
+  width: 400px;
+}
+
 
 a.btn--orange {
   color: #fff;
