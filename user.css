@@ -269,94 +269,6 @@ h1{
   background-color: #FFDBC9;
 }
 
-/*user hoome*/
-
-#outer {  /*全体像*/
-background-color:#fff;
-margin-left: 50px;
-width:800px;
-border-left: 1px solid #e5e5e5;
-border-right: 1px solid #e5e5e5;
-}
-#header {  /*契約プランとお知らせ一覧の間*/
-height:150px;
-}
-.header-inner {  /*契約プランのところ*/
-padding:15px 0 0 20px;
-font-size:100px;
-}
-.header-inner p{
-font-size:24px;
-}
-h5 {
-font-weight:bold;
-color:#357109;
-font-size:100px;
-margin:0;
-padding:7px 0 0 0;
-}
-h5 a{
-font-weight:bold;
-color:#357109;
-text-decoration:none;
-}
-
-p {
-margin:1em 0;
-font-size:13px;
-line-height:150%;
-}
-a{
-color:#094a94;
-}
-#left {  /*サイドメニュー*/
-color:#676767;
-font-size:13px;
-width:270px;
-float:left;
-}
-.left-title {  /*お知らせ一覧*/
-margin:0 15px 0 20px;
-padding:7px 20px;
-font-weight:bold;
-font-size: 24px;
-background-color:#E3E3E3;
-color:#333;
-border-top: 1px solid #c7c7c7;
-border-right: 1px solid #c7c7c7;
-border-left: 1px solid #c7c7c7;
-}
-.left-title {  /*お知らせ一覧の中身*/
-margin:0 15px 0 20px;
-padding:7px 20px;
-font-weight:bold;
-background-color:#E3E3E3;
-color:#333;
-border-top: 1px solid #c7c7c7;
-border-right: 1px solid #c7c7c7;
-border-left: 1px solid #c7c7c7;
-}
-
-li { /*お知らせの箇条書きの点*/
-list-style:disc;
-}
-
-time{  /*掲載時間*/
-  display: inline-block;
-  font-weight: bold;
-  margin-right:40px;
-}
-
-.new::after{
-  content:"NEW";
-  color: #d10606;
-  font-size: 1.1rem;
-  border: 1px solid #d10606;
-  padding: 4px 8px;
-  margin: 0 0 0 20px;
-  display: inline-block;
-  line-height: 1;
-}
 
 
 /* ソートボタンのセクション全体に適用 */
@@ -497,4 +409,77 @@ input[type="reset"]{
 	padding: 10px 20px;
 	margin: 0 10px;
 	border-radius: 10px;
+}
+
+
+/*ユーザーのホームのところ*/
+/*全体*/
+.hidden_box {
+    margin: 1em 0;/*前後の余白*/
+    padding: 0;
+}
+
+/*ボタン装飾*/
+.hidden_box label {
+    padding: 3px;
+    font-weight: bold;
+    cursor :pointer;
+}
+
+/*ボタンホバー時*/
+.hidden_box label:hover {
+    background: #efefef;
+}
+
+/*チェックは見えなくする*/
+.hidden_box input {
+    display: none;
+}
+
+/*中身を非表示にしておく*/
+.hidden_box .hidden_show {
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: 0.8s;
+}
+
+/*クリックで中身表示*/
+.hidden_box input:checked ~ .hidden_show {
+    padding: 5px 0;
+    height: auto;
+    opacity: 1;
+
+}
+
+
+li{
+  border-bottom:1px dotted #000;
+  list-style:none;
+  padding:10px;
+  width:1200px;
+ margin:auto;
+}
+
+
+time{
+  display: inline-block;
+  font-weight: bold;
+  margin-right:40px;
+}
+p{
+  color:#1c448d;
+  display: inline-block;
+  text-decoration:underline;
+}
+.new::after{
+  content:"NEW";
+  color: #d10606;
+  font-size: 1.1rem;
+  border: 1px solid #d10606;
+  padding: 4px 8px;
+  margin: 0 0 0 20px;
+  display: inline-block;
+  line-height: 1;
 }
