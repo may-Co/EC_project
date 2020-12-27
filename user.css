@@ -454,11 +454,11 @@ input[type="reset"]{
 }
 
 
-li{
+.home{
   border-bottom:1px dotted #000;
   list-style:none;
   padding:10px;
-  width:1200px;
+  width:80%;
  margin:auto;
 }
 
