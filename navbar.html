@@ -15,28 +15,28 @@
 
  <!-- ====ヘッダー（ナビゲーションバー==== -->
   <div th:fragment="template">
- <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-   <a class="navbar-brand" href="#">Navbar</a>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+ <a class="navbar-brand" href="./home.html">LOGO</a>
    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
      <span class="navbar-toggler-icon"></span>
    </button>
    <div class="collapse navbar-collapse" id="navbarNavDropdown">
      <ul class="navbar-nav">
-       <li class="nav-item active">
-         <a class="nav-link" href="#">マニュアルページ<span class="sr-only">(current)</span></a>
+       <li class="nav-item">
+         <a class="nav-link" href="#">マニュアルページ</a>
        </li>
        <li class="nav-item">
-         <a class="nav-link" href="#">出品リスト</a>
+         <a class="nav-link" href="./qoo10_config.html">出品リスト</a>
        </li>
        <li class="nav-item">
-         <a class="nav-link" href="#">商品検索</a>
+         <a class="nav-link" href="./search_url.html">商品検索</a>
        </li>
        <li class="nav-item dropdown">
          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         <i class="fas fa-cog"></i>  設定
          </a>
-         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-           <a class="dropdown-item" href="./qoo10Conflg.html"><i class="fas fa-dollar-sign"></i>   価格設定</a>
+         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+           <a class="dropdown-item" href="./qoo10_price.html"><i class="fas fa-dollar-sign"></i>   価格設定</a>
            <a class="dropdown-item" href="./iteminsert.html"><i class="fas fa-shopping-cart"></i>  ショップ設定</a>
            <a class="dropdown-item" href="./account.html"><i class="far fa-user">  アカウント設定</i></a>
          </div>
@@ -44,8 +44,7 @@
      </ul>
    </div>
  </nav>
-  </div>
-
+</div>
 
 
            <!-- Optional JavaScript -->
