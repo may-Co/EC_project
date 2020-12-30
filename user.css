@@ -237,20 +237,15 @@ table tbody th {  /*表の左の色*/
 
 
 /*signup*/
-.row{
-  margin-top: 30px;
-}
-
 hr{
   border-width: 3px;
   border-color: #43A047;
 }
-h1{
-  font-size: 25px;
-    font-weight: bold;
-    margin: 0;
-  text-align: center;
+
+form.row{
+  margin: auto;
 }
+
 
 .btn{
   float: right;
