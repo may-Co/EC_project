@@ -7,6 +7,10 @@ li{
 }
 
 
+nav.navbar-expand-lg{
+  font-size: 20px;
+}
+
 /* login Form Layout */
 .form-wrapper {
   background: #fafafa;
