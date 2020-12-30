@@ -5,6 +5,10 @@ li{
 }
 
 
+nav.navbar-expand-lg{
+  font-size: 20px;
+}
+
 /*postNotification*/
 h1 {
   padding: 0.5em;/*文字周りの余白*/
