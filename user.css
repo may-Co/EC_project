@@ -356,24 +356,31 @@ dl.search1 dd button span{
 
 /*ショップ設定*/
 form{
-	width:600px; /*お好みで調整してください*/
+	width:100%; /*お好みで調整してください*/
 	margin:0 auto;
 }
 .inputs{
 	overflow: hidden;
 	margin-bottom: 20px;
 }
-.label{
+.label_aaa{
 	float: left;
-	margin-right: 20px;
-	width:200px;
+	width:300px;
 	border-left: solid 3px #FF6701;
 	padding-left: 10px;
+  font-size: 20px;
 }
 .input_form{
 	float: left;
-	width:300px;
+	width:500px;
 }
+
+.input_form1{
+  float: left;
+  width:1400px;
+  height:500px;
+}
+
 input[type="text"],
 input[type="number"],
 input[type="email"],
@@ -410,6 +417,59 @@ input[type="reset"]{
 	border-radius: 10px;
 }
 
+.cp_ipradio {
+	width: 90%;
+	margin: 2em auto;
+	text-align: left;
+}
+.cp_ipradio ul {
+	margin: 0.5rem 0.5rem 2rem 0.5rem;
+	padding: 0.5rem 1rem;
+	list-style: none;
+}
+.cp_ipradio .list_item {
+	margin: 0 0 0.5rem 0;
+	padding: 0;
+}
+.cp_ipradio label {
+	line-height: 135%;
+	position: relative;
+	margin: 0.5rem;
+	cursor: pointer;
+}
+.cp_ipradio .option-input {
+	position: relative;
+	margin: 0 1rem 0 0;
+	cursor: pointer;
+}
+.cp_ipradio .option-input:before,
+.cp_ipradio .option-input:after {
+	position: absolute;
+	z-index: 1;
+	top: -0.125rem;
+	left: -0.125rem;
+	width: 1rem;
+	height: 1rem;
+	content: '';
+	-webkit-transition: all 0.3s ease-in-out;
+	        transition: all 0.3s ease-in-out;
+	border-radius: 50%;
+	background: #ffffff;
+}
+.cp_ipradio .option-input:after {
+	z-index: 0;
+	top: -0.25rem;
+	left: -0.25rem;
+	width: 1.25rem;
+	height: 1.25rem;
+	background: #da3c41;
+}
+.cp_ipradio .option-input:checked:before {
+	-webkit-transform: scale(0, 0);
+	        transform: scale(0, 0);
+	border-width: 0.625rem;
+	border-color: #da3c41;
+}
 
 /*ユーザーのホームのところ*/
 /*全体*/
