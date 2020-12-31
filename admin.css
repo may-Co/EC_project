@@ -68,10 +68,36 @@ h3:after {
 }
 
 /*NGword*/
+.asin,.keyword {
+  margin:20px auto;
+  max-width: 900px;
+  text-align: center;
+}
+
 .btn-primary{
   position:relative;
   top:auto;
-  left:510px;
+}
+
+.radio01{
+  margin:20px auto;
+  font-size: 18px;
+}
+
+.NG{
+  width: 800px;
+}
+
+/*NG CSV一括登録*/
+.csv{
+  margin:20px auto;
+  max-width: 900px;
+  text-align: center;
+}
+
+.border{
+  margin-bottom: 20px;
+  max-width: 400px;
 }
 
 /*item detail*/
