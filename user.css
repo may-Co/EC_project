@@ -482,3 +482,15 @@ p{
   display: inline-block;
   line-height: 1;
 }
+
+
+/*入力フォーム*/
+.input_url{
+  width: 100%;
+  text-align: center;
+}
+
+input.url{
+  width: 900px;
+  margin:10px auto;
+}
