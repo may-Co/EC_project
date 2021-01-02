@@ -230,6 +230,7 @@ table.ccc{
   width: 1200px;
   border-collapse:separate;
   border-spacing: 0;
+  margin:10px auto;
 }
 
 table.ccc th:first-child{
