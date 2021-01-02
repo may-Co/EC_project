@@ -274,3 +274,15 @@ table.ccc tr:last-child td:first-child {
 table.ccc tr:last-child td:last-child {
   border-radius: 0 0 5px 0;
 }
+
+
+/*config_status*/
+.change{
+  margin:20px auto;
+  width: 800px;
+  text-align: center;
+}
+
+.btn-success{
+  margin-top: 20px;
+}
