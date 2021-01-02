@@ -1,9 +1,10 @@
-
-
 li{
   list-style: none;
 }
 
+p{
+  font-size: 18px;
+}
 
 nav.navbar-expand-lg{
   font-size: 20px;
@@ -27,10 +28,8 @@ input.hoge{
   width: 400px;
 }
 
-
 a.btn--orange {
   color: #fff;
-  background-color: #eb6100;
   border-bottom: 5px solid #b84c00;
   position:relative;
   top:auto;
@@ -147,44 +146,56 @@ table.aaa td{
 }
 
 /*UserDtail*/
-table.bbb{
-  border-collapse:separate;
-  border-spacing: 5px;
-  width: 800px;
+.user{
+  margin:20px auto;
+  max-width: 900px;
+  text-align: center;
+}
+
+.user_table{
+  margin-top: 30px;
+  text-align: center;
+  width: 900px;
+  margin-left: 30px;
+}
+
+.bbb{
+  width: 90%;
 }
 
 table.bbb th,table.bbb td{
-  border-radius: 5px;
   text-align: center;
-  padding: 10px 0;
+  padding: 20px 0;
 }
 
 table.bbb th{
-  background-color: #c79852;
-  color: white;
-  border:solid 1px #927141;
-  width: 300px;
+  background-color: #fffacd;
+  color: black;
+  border:solid 2px #000000;
+  width: 20%;
+  margin: 10px auto;
 }
 
 table.bbb td{
-  background-color: #e4d4bc;
-  border:solid 1px #af9d85;
+  background-color: #fffaf0;
+  border:solid 2px #000000;
+  font-size: 18px;
+  color:black;
+  font-weight: bold;
 }
 
-.btn,
-a.btn,
-button.btn {
-
+a.btn--red{
+  margin:30px auto;
   font-size: 15px;
   font-weight: 700;
   line-height: 1;
   position: relative;
   padding: 1rem 3rem;
   letter-spacing: 0.1em;
-  color: #ff0000;
+  color: black;
   border-radius: 0.5rem;
   border-color: #ff0000;
-  left:630px;
+  background-color: #ff6347;
 }
 
 
@@ -193,7 +204,7 @@ a.btn--red.btn--cubic {
 }
 
 a.btn--red.btn--cubic:hover {
-  margin-top: 3px;
+  margin-top: 33px;
   border-bottom: 2px solid #9f000c;
 }
 
@@ -201,8 +212,65 @@ a.btn--radius {
   border-radius: 100vh;
 }
 
-.fa-position-right {
-  position: absolute;
-  top: calc(50% - .5em);
-  right: 1rem;
+.bt-config{
+  float: right;
+  margin-right: 10px;
+  padding: 3px 15px;
+  letter-spacing: 2px;
+}
+
+
+.status{
+  color:black;
+}
+
+/*user list*/
+
+table.ccc{
+  width: 1200px;
+  border-collapse:separate;
+  border-spacing: 0;
+}
+
+table.ccc th:first-child{
+  border-radius: 5px 0 0 0;
+}
+
+table.ccc th:last-child{
+  border-radius: 0 5px 0 0;
+  border-right: 1px solid #3c6690;
+}
+
+table.ccc th{
+  text-align: center;
+  color:white;
+  background: linear-gradient(#829ebc,#225588);
+  border-left: 1px solid #3c6690;
+  border-top: 1px solid #3c6690;
+  border-bottom: 1px solid #3c6690;
+  box-shadow: 0px 1px 1px rgba(255,255,255,0.3) inset;
+  width: 25%;
+  padding: 10px 0;
+}
+
+table.ccc td{
+  text-align: center;
+  border-left: 1px solid #a8b7c5;
+  border-bottom: 1px solid #a8b7c5;
+  border-top:none;
+  box-shadow: 0px -3px 5px 1px #eee inset;
+  width: 25%;
+  padding: 10px 0;
+}
+
+table.ccc td:last-child{
+  border-right: 1px solid #a8b7c5;
+}
+
+table.ccc tr:last-child td:first-child {
+  border-radius: 0 0 0 5px;
+}
+
+table.ccc tr:last-child td:last-child {
+  border-radius: 0 0 5px 0;
 }
