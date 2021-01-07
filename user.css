@@ -319,6 +319,19 @@ form.row{
     margin: 0 3px;
 }
 
+
+
+.deleate{
+  text-decoration: underline;
+  color:#ff4500;
+  font-weight: bold;
+}
+
+.deleate:hover{
+color:#dc143c;
+}
+
+
 /*商品一覧　検索ボックス*/
 
 dl.search1{
