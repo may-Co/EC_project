@@ -208,47 +208,46 @@ a.btn--yellow:hover{
   border-bottom: 2px solid #ccc100;
 }
 
-/*参考価格設定の表*/
-body{
-  font-family: "Open Sans", sans-serif;
-  line-height: 1.25;
-}
-
-
-.table {
-  border-collapse: collapse;
-  margin: 0 auto;
-  padding: 0;
-  max-width: 900px;
-}
-
-table tr {  /*表の中*/
-  background-color: #e6f2f5;
-  padding: .35em;
-  border-bottom: 2px solid #fff;
-}
-
-table th,
-table td {  /*表全体の線*/
-  padding: auto;
-  border-right: 2px solid #fff;
-}
-
-
-table th { /*題名のフォントの大きさ*/
-  font-size: .85em;
-}
-table thead tr{    /*表の上の*/
+/*販売価格設定の表*/
+.ex{
+  padding: 20px 10px;
+  margin: 30px auto;
+  background-color: #ffffe0;
   text-align: center;
-  background-color: #167F92;
-  color:#fff;
+  width: 90%;
+  font-size: 20px;
+  font-weight: bold;
 }
 
-table tbody th {  /*表の左の色*/
-      background: #78bbc7;
-      color: #fff;
-  }
+.config{
+  border-bottom: solid;
+  border-width: 1px;
+  width: 90%;
+  margin: 50px auto;
+}
 
+p.sale{
+ border-bottom: double;
+ border-color: #ff0000;
+ border-width: 5px;
+ width: 100%;
+ margin:10px auto;
+ padding: 10px auto;
+ padding-bottom: 0;
+ font-size: 18px;
+ font-weight: bold;
+}
+
+p.sale_set{
+  margin-left: 10%;
+  font-size: 18px;
+  font-weight: bold;
+  border-bottom:
+}
+
+input.percent{
+  width: 45px;
+}
 
 .txt{
    text-align: center;
@@ -263,12 +262,15 @@ table tbody th {  /*表の左の色*/
   font-weight: bold;
 }
 .non{
-  background:#fff
-}
-.end{
-  text-align: right;
+  background-color: #fff;
 }
 
+.btn-warning{
+  margin-bottom: 40px;
+  margin-left: 50%;
+  text-align: center;
+  width: 80px;
+}
 
 /*signup*/
 
