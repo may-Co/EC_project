@@ -208,16 +208,23 @@ a.btn--yellow:hover{
   border-bottom: 2px solid #ccc100;
 }
 
-/*販売価格設定の表*/
-.ex{
+/*販売価格設定*/
+div.ex{
   padding: 20px 10px;
   margin: 30px auto;
   background-color: #ffffe0;
   text-align: center;
   width: 90%;
-  font-size: 20px;
+  font-size: 30px;
   font-weight: bold;
 }
+
+p.ex{
+  font-weight: normal;
+  font-size: 20px;
+  text-align: left;
+}
+
 
 .config{
   border-bottom: solid;
