@@ -271,35 +271,32 @@ table tbody th {  /*表の左の色*/
 
 
 /*signup*/
+
+h4{
+color: #43A047;
+text-align: center;
+padding: 2em 0;
+}
+
 hr{
   border-width: 3px;
   border-color: #43A047;
 }
 
-form.row{
-  margin: auto;
+.col-sm-4{
+  margin:10px auto;
 }
 
-
-.btn{
+button.btn-primary{
+  margin:30px 40%;
+  width: 80px;
   float: right;
 }
 
 
-.secList {
-  font-size:20px;
-}
-
-.et_pb_text_inner1 {
-  background-color: #EAD9FF;
-}
-
-.et_pb_text_inner2 {
-  background-color: #FFD5EC;
-}
-
-.et_pb_text_inner3 {
-  background-color: #FFDBC9;
+.form-froup{
+  margin:10pc auto;
+  text-align:center;
 }
 
 
