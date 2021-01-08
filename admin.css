@@ -6,8 +6,37 @@ p{
   font-size: 18px;
 }
 
+
+/*ナビゲーションバー*/
 nav.navbar-expand-lg{
   font-size: 20px;
+  text-align: center;
+
+}
+
+ul.navbar-nav{
+  display: flex;
+}
+
+li.nav-item{
+  list-style-type: none;
+  color: #ffffff;
+  flex-grow: 1;
+  text-align: center;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+li + li {
+  border-left: 1px solid #fff;
+}
+
+p.nav-link{
+  text-align: right;
+}
+
+i{
+  font-size: 45px;
 }
 
 /*postNotification*/
