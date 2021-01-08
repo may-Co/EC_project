@@ -608,3 +608,43 @@ input.url{
   width: 900px;
   margin:10px auto;
 }
+
+
+
+/*set.html*/
+.set{
+text-align: center;
+margin:50px auto;
+}
+
+i{
+  font-size: 40px;
+  margin-right: 10px;
+}
+
+.set_price01,.set_price02,.set_account,.set_shop,.set_connection{
+  padding: 30px 40px;
+  margin-bottom: 30px;
+  width: 700px;
+  font-size: 30px;
+}
+
+.set_price01{
+  background-color: #00bfff;
+}
+
+.set_price02{
+  background-color: #ff00ff;
+}
+
+.set_shop{
+  background-color: #00fa9a;
+}
+
+.set_account{
+  background-color: #ffd700;
+}
+
+.set_connection{
+  background-color: #ff7f50;
+}
