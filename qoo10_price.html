@@ -5,101 +5,54 @@ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 
   <head>
     <meta charset="utf-8">
-    <title>価格設定ページ</title>
+    <title>販売価格設定</title>
     <link rel="stylesheet" href="../CSS/user.css"></link>
   <!-- Bootstrap CSS -->
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
   </head>
-        <body>
+        <body style="background-color:whitesmoke";>
 
 
 
   <!--価格設定-->
   <header>
 
-    <h2><font size="30px">参考価格設定</font></h2>
-<br>
-<br>
-      <table class="table">
-      <thead>
-      <tr>
-<td class="non"></td>
-<th scope="col">Amazonの販売価格</th>
-<th scope="col">％</th>
-<th scope="col">固定額</th>
+    <h2><font size="30px">販売価格設定</font></h2>
+      <div class="ex">販売価格＝Amazonの販売価格 × ○○％ ＋ 固定額○○円で販売価格を設定します。
+      </div>
+<div class="config">
+<p class="sale">販売価格<input type="text" name="price" class="text "placeholder="例）1000">円以下の場合</p>
+<p class="sale_set">=Amazon販売価格 ×　<input type="text" class="percent"> %　 + <input type="text" placeholder="固定額">円
+</p>
+</div>
 
-      </tr>
-      </thead>
-      <tbody>
+<div class="config">
+<p class="sale">販売価格<input type="text" name="price" class="text "placeholder="例）2000">円以下の場合</p>
+<p class="sale_set">=Amazon販売価格 ×　<input type="text" class="percent"> %　 + <input type="text" placeholder="固定額">円
+</p>
+</div>
 
-      <tr>
-      <th><input type="text" name="price" size="10"  placeholder="例）500">円以下の場合 </th>
-      <td  data-label="Amazonの販売価格" class="txt">Amazonの販売価格</td>
-      <td data-label="%" class="percent"> <input type="text" name="name" size="2"></td>
-      <td data-label="固定額" class="price"> <input type="text" name="level" size="15"></td>
-      </tr>
+<div class="config">
+<p class="sale">販売価格<input type="text" name="price" class="text "placeholder="例）3000">円以下の場合</p>
+<p class="sale_set">=Amazon販売価格 ×　<input type="text" class="percent"> %　 + <input type="text" placeholder="固定額">円
+</p>
+</div>
 
-<tr>
-            <th> <input type="text" name="name" size="10" placeholder="例）501">円〜
-      　　　<input type="text" name="name" size="10" placeholder="例）1000">円の場合
-    </th>
-            <td data-label="Amazonの販売価格" class="txt">Amazonの販売価格</td>
-            <td data-label="%" class="percent"> <input type="text" name="name" size="2"></td>
-            <td data-label="固定額" class="price"> <input type="text" size="15" name="level"></td>
-            </tr>
+<div class="config">
+<p class="sale">販売価格<input type="text" name="price" class="text "placeholder="例）4000">円以下の場合</p>
+<p class="sale_set">=Amazon販売価格 ×　<input type="text" class="percent"> %　 + <input type="text" placeholder="固定額">円
+</p>
+</div>
 
+<div class="config">
+<p class="sale">販売価格<input type="text" name="price" class="text "placeholder="例）4001">円以上の場合</p>
+<p class="sale_set">=Amazon販売価格 ×　<input type="text" class="percent"> %　 + <input type="text" placeholder="固定額">円
+</p>
+</div>
 
-
-<tr>
-      <th> <input type="text"  name="name" size="10" placeholder="例）1001">円〜
-　　　<input type="text" name="name" size="10" placeholder="例）2000">円の場合
-</th>
-      <td data-label="Amazonの販売価格" class="txt">Amazonの販売価格</td>
-      <td data-label="%" class="percent"> <input type="text" size="2" name="name"></td>
-      <td data-label="固定額" class="price"> <input type="text" size="15" name="level"></td>
-      </tr>
-
-
-
-      <th> <input type="text"  name="name" size="10" placeholder="例）2001">円〜
-    　　　<input type="text"  name="name" size="10" placeholder="例）3000">円の場合
-  </th>
-      <td data-label="Amazonの販売価格" class="txt">Amazonの販売価格</td>
-      <td data-label="%" class="percent"> <input type="text" size="2" name="name"></td>
-      <td data-label="固定額" class="price"> <input type="text" size="15" name="level"></td>
-      </tr>
-
-
-
-<tr>
-      <th> <input type="text"  name="name" size="10" placeholder="例）3001">円〜
-    　　　<input type="text"  name="name"size="10" placeholder="例）4000">円の場合
-  </th>
-      <td data-label="Amazonの販売価格" class="txt">Amazonの販売価格</td>
-      <td data-label="%" class="percent"> <input type="text" size="2" name="name"></td>
-      <td data-label="固定額" class="price"> <input type="text" size="15" name="level"></td>
-      </tr>
-
-
-            <tr>
-            <th> <input type="text"  name="name" size="10" placeholder="例）4001">円以上の場合</th>
-            <td data-label="Amazonの販売価格" class="txt">Amazonの販売価格</td>
-            <td data-label="%" class="percent"> <input type="text" size="2" name="name"></td>
-            <td data-label="固定額" class="price"> <input type="text" size="15" name="level"></td>
-              </tr>
-<tr>
-  <td class="non"></td>
-  <td class="non"></td>
-  <td class="non"></td>
-
-      <td data-label="固定額" class="end">
-       <button type="button" class="btn btn-info">更新</button></td>
-    </tr>
-  </tbody>
+<button type="button" class="btn btn-warning">更新</button>
 </header>
-
-</table>
 
 
 
