@@ -17,44 +17,43 @@ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 
   <!--価格設定-->
   <header>
-
-    <h2><font size="30px">販売価格設定</font></h2>
-      <div class="ex">販売価格＝Amazonの販売価格 × ○○％ ＋ 固定額○○円で販売価格を設定します。
+  <h2><font size="30px">販売価格設定</font></h2>
+      <div class="ex">Qoo10の販売価格＝Amazonの販売価格 × ○○％ ＋ 固定額○○円で販売価格を設定します。
+      <p class="ex"> 例）Amazon販売価格3000円以下の場合　
+         <br>　　　　→　2800円（Amazon販売価格）×　５％　＋　1000円（固定額）　＝　3,940円（Qoo10の販売価格）</p>
       </div>
 <div class="config">
-<p class="sale">販売価格<input type="text" name="price" class="text "placeholder="例）1000">円以下の場合</p>
+<p class="sale">Amazon販売価格<input type="text" name="price" class="text "placeholder="例）1000">円以下の場合</p>
 <p class="sale_set">=Amazon販売価格 ×　<input type="text" class="percent"> %　 + <input type="text" placeholder="固定額">円
 </p>
 </div>
 
 <div class="config">
-<p class="sale">販売価格<input type="text" name="price" class="text "placeholder="例）2000">円以下の場合</p>
+<p class="sale">Amazon販売価格<input type="text" name="price" class="text "placeholder="例）2000">円以下の場合</p>
 <p class="sale_set">=Amazon販売価格 ×　<input type="text" class="percent"> %　 + <input type="text" placeholder="固定額">円
 </p>
 </div>
 
 <div class="config">
-<p class="sale">販売価格<input type="text" name="price" class="text "placeholder="例）3000">円以下の場合</p>
+<p class="sale">Amazon販売価格<input type="text" name="price" class="text "placeholder="例）3000">円以下の場合</p>
 <p class="sale_set">=Amazon販売価格 ×　<input type="text" class="percent"> %　 + <input type="text" placeholder="固定額">円
 </p>
 </div>
 
 <div class="config">
-<p class="sale">販売価格<input type="text" name="price" class="text "placeholder="例）4000">円以下の場合</p>
+<p class="sale">Amazon販売価格<input type="text" name="price" class="text "placeholder="例）4000">円以下の場合</p>
 <p class="sale_set">=Amazon販売価格 ×　<input type="text" class="percent"> %　 + <input type="text" placeholder="固定額">円
 </p>
 </div>
 
 <div class="config">
-<p class="sale">販売価格<input type="text" name="price" class="text "placeholder="例）4001">円以上の場合</p>
+<p class="sale">Amazon販売価格<input type="text" name="price" class="text "placeholder="例）4001">円以上の場合</p>
 <p class="sale_set">=Amazon販売価格 ×　<input type="text" class="percent"> %　 + <input type="text" placeholder="固定額">円
 </p>
 </div>
 
 <button type="button" class="btn btn-warning">更新</button>
 </header>
-
-
 
 
                 <!-- Optional JavaScript -->
