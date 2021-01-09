@@ -38,13 +38,12 @@ p.nav-link{
 i{
   font-size: 45px;
 }
-
 /*postNotification*/
 h1 {
-  padding: 0.5em;/*文字周りの余白*/
-  color: #494949;/*文字色*/
-  background: #fffaf4;/*背景色*/
-  border-left: solid 5px #ffaf58;/*左線（実線 太さ 色）*/
+  padding: 0.5em;
+  color: #494949;
+  background: #fffaf4;
+  text-align: center;
 }
 
 textarea{
@@ -52,17 +51,20 @@ textarea{
   resize : both;
 }
 
-/*お知らせ入力のタイトル*/
+.post{
+  text-align: center;
+}
+
 input.hoge{
-  width: 400px;
+  width: 600px;
+  margin-bottom: 20px;
 }
 
 a.btn--orange {
   color: #fff;
+  background-color: #eb6100;
   border-bottom: 5px solid #b84c00;
-  position:relative;
-  top:auto;
-  left:550px;
+  margin:20px auto;
 }
 a.btn--orange:hover {
   margin-top: 3px;
@@ -74,6 +76,7 @@ a.btn--shadow {
   -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
   box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
 }
+
 
 /*user list*/
 h2 {
