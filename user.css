@@ -374,6 +374,27 @@ button.btn-primary{
 }
 
 
+table.table{
+  width:90%;
+  margin:20px auto;
+  text-align: center;
+}
+
+table tr {
+  background-color: #e6f2f5;
+  padding: .35em;
+  border-bottom: 2px solid #fff;
+}
+table th,
+table td {
+  padding: 1em 10px 1em 1em;
+  border-right: 2px solid #fff;
+}
+
+table thead tr{
+  background-color: #167F92;
+  color:#fff;
+}
 
 .deleate{
   text-decoration: underline;
