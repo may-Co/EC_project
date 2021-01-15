@@ -7,6 +7,20 @@ p{
 }
 
 
+.error_message{
+  color:#ff0000;
+  border: 1px solid;
+  border-color: #ff0000;
+  text-align: center;
+  margin:20px auto;
+  margin-left: 10%;
+  width: 80%;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+
 /*ナビゲーションバー*/
 nav.navbar-expand-lg{
   font-size: 18px;
