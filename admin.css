@@ -9,7 +9,7 @@ p{
 
 /*ナビゲーションバー*/
 nav.navbar-expand-lg{
-  font-size: 20px;
+  font-size: 18px;
   text-align: center;
 
 }
@@ -23,8 +23,8 @@ li.nav-item{
   color: #ffffff;
   flex-grow: 1;
   text-align: center;
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 60px;
+  padding-right: 60px;
 }
 
 li + li {
@@ -176,6 +176,39 @@ table.aaa td{
   background-color: #eee;
   padding: 10px 0;
 }
+
+
+table.ddd {
+  border-collapse: collapse;
+  margin: 0 auto;
+  padding: 0;
+  width: 800px;
+  table-layout: fixed;
+  text-align: center;
+}
+
+table.ddd tr {
+  background-color: #e6f2f5;
+  padding: .35em;
+  border-bottom: 2px solid #fff;
+}
+table.ddd th,
+table.ddd td {
+  padding: 1em 10px 1em 1em;
+  border-right: 2px solid #fff;
+}
+table.ddd th {
+  font-size: .85em;
+}
+table.ddd thead tr{
+  background-color: #167F92;
+  color:#fff;
+}
+table.ddd tbody th {
+    background: #78bbc7;
+    color: #fff;
+}
+
 
 /*UserDtail*/
 .user{
