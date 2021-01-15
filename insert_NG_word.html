@@ -4,7 +4,7 @@
 xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
   <head>
     <meta charset="utf-8">
-    <title>AOI</title>
+    <title>NGキーワード・ASIN登録</title>
     <link rel="stylesheet" href="../CSS/admin.css"</link>
    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
@@ -13,6 +13,11 @@ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
    <body style="background-color:whitesmoke";>
 <div class="asin">
    <h3><font size="30px">NG キーワード・ASIN登録</h3></font>
+  
+  
+<!--エラ〜メッセージ-->
+        <p class="error_message">登録に失敗しました。</p>
+
     <p>キーワードもしくはASINを入力してください。複数登録可能です。改行で区別します。
     <br>入力後、NGキーワードもしくはNG ASIN選択してください。</p>
     <textarea rows="10" id="message" placeholder="例：B00BQA11AGB075SW22KP
