@@ -20,11 +20,15 @@ li{
 }
 
 
-/*ナビゲーションバー*/
-nav.navbar-expand-lg{
-  font-size: 20px;
-  text-align: center;
+/*ナビゲーションバー*/nav.navbar-expand-lg, .navbar{
+  font-size: 28px;
+  color: #ffffff;
+}
 
+.fa-book-open,.fa-clipboard-list, .fa-search, .fa-cog{
+  font-size: 50px;
+  color: #ffffff;
+  padding-right: 10px;
 }
 
 ul.navbar-nav{
@@ -33,19 +37,31 @@ ul.navbar-nav{
 
 li.nav-item{
   list-style-type: none;
-  color: #ffffff;
   flex-grow: 1;
   text-align: center;
   padding-left: 100px;
   padding-right: 100px;
 }
 
+.navbar-brand{
+  color: #ffffff;
+}
+
 li + li {
   border-left: 1px solid #fff;
 }
 
+a.nav-link{
+  color: #ffffff;
+}
+
 p.nav-link{
   text-align: right;
+}
+
+.navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+ float: right;
 }
 
 
