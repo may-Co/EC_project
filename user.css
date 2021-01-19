@@ -685,43 +685,53 @@ input.url{
 
 
 /*set.html*/
-.set{
-text-align: center;
-margin:50px auto;
-}
 
-i{
-  font-size: 40px;
-  margin-right: 10px;
-}
-
-.set_price01,.set_price02,.set_account,.set_shop,.set_connection{
-  padding: 30px 40px;
-  margin-bottom: 30px;
-  width: 700px;
+h5{
+  font-weight: bold;
   font-size: 30px;
 }
 
-.set_price01{
-  background-color: #00bfff;
+.set_container{
+  margin-left: 20px;
+  margin-right: 20px;
+  display: flex;
 }
 
-.set_price02{
-  background-color: #ff00ff;
+.set{
+position: relative;
+text-align: center;
+margin:90px 15px;
+padding-top: 20px;
+padding-left: 15px;
+padding-right: 15px;
+border-style: solid;
+border-width: thin;
 }
 
-.set_shop{
-  background-color: #00fa9a;
+a.set{
+  position:absolute;
+  top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   text-indent:-999px;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+  border-style: none;
 }
 
-.set_account{
-  background-color: #ffd700;
+.icon{
+  font-size: 100px;
+  margin-bottom: 40px;
+  padding-top: 50px;
+  width:200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #d3d3d3;
+  color:#ffffff;
+  text-align: center;
 }
-
-.set_connection{
-  background-color: #ff7f50;
-}
-
 
 /*エラー画面*/
 .error{
