@@ -35,6 +35,11 @@ li{
   color: #ffffff;
 }
 
+
+nav.navbar-expand-lg{
+  margin-bottom: 60px;
+}
+
 .fa-book-open,.fa-clipboard-list, .fa-search, .fa-cog{
   font-size: 50px;
   color: #ffffff;
