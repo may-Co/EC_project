@@ -788,10 +788,8 @@ input.url{
 
 
 /*set.html*/
-
-h5{
-  font-weight: bold;
-  font-size: 30px;
+.set01{
+  height: 750px;
 }
 
 .set_container{
@@ -831,7 +829,7 @@ a.set{
   width:200px;
   height: 200px;
   border-radius: 50%;
-  background-color: #d3d3d3;
+  background-color: #84c4ff;
   color:#ffffff;
   text-align: center;
 }
