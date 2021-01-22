@@ -177,6 +177,29 @@ p.status{
 }
 
 
+/*NG CSV一括登録*/
+.csv{
+  margin:20px auto;
+  text-align: center;
+  padding-bottom:500px;
+}
+
+.serect_file{
+  border-style: solid;
+  border-width: thin;
+  background-color: #efffef;
+  padding-top:20px;
+  width:600px;
+  text-align:center;
+  margin:20px auto;
+  margin-bottom: 0;
+}
+
+.border{
+  margin-bottom: 20px;
+  max-width: 400px;
+}
+
 /*postNotification*/
 textarea{
   width: 600px;
@@ -250,19 +273,6 @@ h3:after {
 .NG{
   width: 800px;
 }
-
-/*NG CSV一括登録*/
-.csv{
-  margin:20px auto;
-  max-width: 900px;
-  text-align: center;
-}
-
-.border{
-  margin-bottom: 20px;
-  max-width: 400px;
-}
-
 /*item detail*/
 table.aaa{
   width: 800px;
