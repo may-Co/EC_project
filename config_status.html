@@ -11,8 +11,12 @@ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     </head>
      <body>
+            <div class="full-page">
 
-  <h4>変更するステータスを選択し、変更ボタンを押してください</h4>
+
+  <h1>ステータス変更</h1>
+  <p class="status0">変更するステータスを選択し、変更ボタンを押してください</p>
+<div class="change_status">
   <div class="change">
 
     <!--エラ〜メッセージ-->
@@ -20,7 +24,7 @@ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
             ステータスを変更しました。</p>
 
 
-  <p class="status">Qoo10ステータス</p>
+  <p class="status">Qoo10用プラン</p>
   <hr>
        <input type="radio" id="01" name="radio02" checked>
        <label for="02" class="radio02">プラチナQプラン</label>
@@ -30,7 +34,7 @@ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
        <label for="02" class="radio02">スタンダードQプラン</label>
      </div>
        <div class="change">
-   <p class="status">Yhoo!ステータス</p>
+   <p class="status">Yhoo!用プラン</p>
        <hr>
        <input type="radio" id="01" name="radio02">
        <label for="02" class="radio02">プラチナYプラン</label>
@@ -40,7 +44,7 @@ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
        <label for="02" class="radio02">スタンダードYプラン</label>
 </div>
   <div class="change">
-   <p class="status">Qoo10 & Yahoo! ステータス</p>
+   <p class="status">Qoo10 & Yahoo! 用プラン</p>
        <hr>
        <input type="radio" id="01" name="radio02">
        <label for="02" class="radio02">プラチナQYプラン</label>
@@ -51,7 +55,8 @@ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
        <br>
        <button type="button" class="btn btn-success btn-lg">変更</button>
 </div>
-
+</div>
+</div>
       <!-- Optional JavaScript -->
        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
