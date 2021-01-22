@@ -307,7 +307,7 @@ p.ex{
 
 p.sale{
  border-bottom: double;
- border-color: #ff0000;
+ border-color: #00bfff;
  border-width: 5px;
  width: 100%;
  margin:10px auto;
@@ -344,13 +344,16 @@ input.percent{
   background-color: #fff;
 }
 
-.btn-warning{
+.refresh{
   margin-bottom: 40px;
   margin-left: 50%;
   text-align: center;
-  width: 80px;
+  background-color: #00bfff;
+  color:#ffffff;
+  padding:10px 30px;
+  letter-spacing: 12px;
+  font-weight: bold; 
 }
-
 /*signup*/
 
 h4{
