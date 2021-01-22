@@ -91,18 +91,6 @@ h1 {
  border-bottom: solid 3px #516ab6;
 }
 
-h2 {
-  text-align: center;
-
-}
-
-h3{
-  border-bottom: solid 3px skyblue;
-  margin: 30px 50px;
-  padding-top: 50px;
-  font-size: 50px;
-}
-
 
 /* login Form*/
 .login{
@@ -404,7 +392,7 @@ a.btn--shadow {
 /*signup*/
 
 h4{
-color: #43A047;
+color: #0a84ff;
 text-align: center;
 padding: 2em 0;
 }
@@ -416,6 +404,7 @@ hr{
 
 .col-sm-4{
   margin:10px auto;
+    height: 800px;
 }
 
 button.btn-primary{
@@ -424,9 +413,8 @@ button.btn-primary{
   float: right;
 }
 
-
 .form-froup{
-  margin:10pc auto;
+  margin:10px auto;
   text-align:center;
 }
 
