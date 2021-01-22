@@ -255,18 +255,31 @@ button.btn--blue:hover{
 }
 
 
-/*商品登録　Q00１０へ出品する*/
-a.btn--yellow{
-  color: #000;
-  background-color: #fff100;
-  border-bottom: 5px solid #ccc100;
+/*CSV Insert*/
+.csv{
+  margin:30px auto;
+  text-align: center;
+  height:690px;
 }
 
-a.btn--yellow:hover{
-  margin-top: 3px;
-  color: #000;
-  background: # fff20a;
-  border-bottom: 2px solid #ccc100;
+.csv_serect{
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.csv_box{
+  border-style: solid;
+  background-color: #e0efff;
+  border-width: thin;
+  width: 60%;
+  margin:20px auto;
+  text-align: center;
+  padding:20px 30px;
+}
+
+.border-dark{
+  font-size: 20px;
+  margin:10px;
 }
 
 /*販売価格設定*/
