@@ -524,10 +524,12 @@ dl.search1 dd button span{
 }
 
 /*ショップ設定*/
-form{
-	width:100%; /*お好みで調整してください*/
-	margin:0 auto;
+.shop{
+  margin:40px auto;
+  margin:0 auto;
+  margin-left: 60px;
 }
+
 .inputs{
 	overflow: hidden;
 	margin-bottom: 20px;
@@ -535,7 +537,7 @@ form{
 .label_aaa{
 	float: left;
 	width:300px;
-	border-left: solid 3px #FF6701;
+	border-left: solid 3px #ff4000;
 	padding-left: 10px;
   font-size: 20px;
 }
@@ -564,10 +566,10 @@ textarea{
 }
 .btn-area{
 	text-align: center;
-　　　　 padding-bottom: 100px;
+  padding-bottom: 100px;
 }
 input[type="submit"]{
-	background: #FF6701;
+	background: #ff4000;
 	border: none;
 	color: #fff;
 	font-size:15px;
@@ -576,6 +578,7 @@ input[type="submit"]{
 	margin: 0 10px;
 	border-radius: 10px;
 }
+
 input[type="reset"]{
 	background: #aaa;
 	border: none;
@@ -632,14 +635,13 @@ input[type="reset"]{
 	left: -0.25rem;
 	width: 1.25rem;
 	height: 1.25rem;
-	background: #da3c41;
+	background: #ff4000;
 }
 .cp_ipradio .option-input:checked:before {
 	-webkit-transform: scale(0, 0);
 	        transform: scale(0, 0);
-	border-width: 0.625rem;
-	border-color: #da3c41;
 }
+
 
 /*ユーザーのホームのところ*/
 /*全体*/
