@@ -2,8 +2,17 @@ li{
   list-style: none;
 }
 
-p{
-  font-size: 18px;
+
+body{
+  margin:0;
+  padding:0;
+}
+
+/*背景色*/
+.full-page{
+    width: 100%;
+    height: 100%;
+    background-color: #f5f5f5;
 }
 
 
@@ -25,7 +34,7 @@ p{
 nav.navbar-expand-lg{
   font-size: 18px;
   text-align: center;
-
+  color:#ffffff;
 }
 
 ul.navbar-nav{
@@ -41,6 +50,10 @@ li.nav-item{
   padding-right: 60px;
 }
 
+
+.fa-edit,.fa-users,.fa-list-alt,.fa-sort-amount-up,.fa-times-circle{
+  color:#ffffff;
+}
 li + li {
   border-left: 1px solid #fff;
 }
@@ -51,6 +64,20 @@ p.nav-link{
 
 i{
   font-size: 45px;
+}
+
+
+.navbar-brand{
+  color: #ffffff;
+}
+
+a.nav-link{
+  color: #ffffff;
+}
+
+.navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+ float: right;
 }
 /*postNotification*/
 h1 {
