@@ -200,6 +200,26 @@ p.status{
   max-width: 400px;
 }
 
+
+/*NGword*/
+.asin{
+  padding-bottom: 280px;
+}
+
+.asin,.keyword {
+  margin:20px auto;
+  text-align: center;
+}
+
+.radio01{
+  margin:20px auto;
+  font-size: 18px;
+}
+
+.NG{
+  width: 800px;
+}
+
 /*postNotification*/
 textarea{
   width: 600px;
@@ -233,46 +253,6 @@ a.btn--shadow {
 }
 
 
-/*user list*/
-h2 {
-  background: linear-gradient(transparent 70%, #a7d6ff 70%);
-}
-
-/*登録商品一覧*//*NGword*/
-h3{
-  border-bottom: solid 3px skyblue;
-  position: relative;
-}
-
-h3:after {
-  position: absolute;
-  content: " ";
-  display: block;
-  border-bottom: solid 3px #ffc778;
-  bottom: -3px;
-  width: 30%;
-}
-
-/*NGword*/
-.asin,.keyword {
-  margin:20px auto;
-  max-width: 900px;
-  text-align: center;
-}
-
-.btn-primary{
-  position:relative;
-  top:auto;
-}
-
-.radio01{
-  margin:20px auto;
-  font-size: 18px;
-}
-
-.NG{
-  width: 800px;
-}
 /*item detail*/
 table.aaa{
   width: 800px;
