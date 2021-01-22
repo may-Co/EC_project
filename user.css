@@ -773,6 +773,7 @@ p{
 .input_url{
   width: 100%;
   text-align: center;
+  height: 900px;
 }
 
 input.url{
@@ -780,6 +781,9 @@ input.url{
   margin:10px auto;
 }
 
+.amazon{
+  font-size: 20px;
+}
 
 
 /*set.html*/
