@@ -16,25 +16,13 @@ body{
 }
 
 
-.error_message{
-  color:#ff0000;
-  border: 1px solid;
-  border-color: #ff0000;
-  text-align: center;
-  margin:20px auto;
-  margin-left: 10%;
-  width: 80%;
-  padding: 10px;
-  font-size: 18px;
-  font-weight: bold;
-}
-
 
 /*ナビゲーションバー*/
 nav.navbar-expand-lg{
   font-size: 18px;
   text-align: center;
   color:#ffffff;
+  margin-bottom: 20px;
 }
 
 ul.navbar-nav{
@@ -79,14 +67,73 @@ a.nav-link{
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
  float: right;
 }
-/*postNotification*/
+
+
 h1 {
-  padding: 0.5em;
-  color: #494949;
-  background: #fffaf4;
+  position: relative;
+  text-align: left;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+h1:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 7px;
+  background: -webkit-repeating-linear-gradient(-45deg, #6ad1c8, #6ad1c8 2px, #fff 2px, #fff 4px);
+  background: repeating-linear-gradient(-45deg, #6ad1c8, #6ad1c8 2px, #fff 2px, #fff 4px);
+}
+
+
+
+/*config_maximum*/
+.config{
+  font-size: 20px;
+}
+.max{
+  text-align: center;
+  padding-bottom:180px;
+}
+table.max{
+  width: 60%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin:40px auto;
+  text-align:
+}
+
+table.max th,table.max td{
+  padding: 10px 0;
   text-align: center;
 }
 
+table.max tr:nth-child(odd){
+  background-color: #eee
+}
+a.btn--max {
+  color: #fff;
+  background-color: #32cd32;
+  border-bottom: 5px solid #186618;
+  text-align: center;
+  width: 100px;
+  margin:20px auto;
+}
+a.btn--max:hover {
+  margin-top: 17px;
+  color: #fff;
+  background: #259925;
+  border-bottom: 2px solid #186618;;
+}
+a.btn--shadow {
+  -webkit-box-shadow: 0 3px 5px #186618;
+  box-shadow: 0 3px 5px #186618;
+}
+
+
+/*postNotification*/
 textarea{
   width: 600px;
   resize : both;
