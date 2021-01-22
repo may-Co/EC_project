@@ -416,35 +416,25 @@ table thead tr{
 }
 
 
-textarea{
-  width: 600px;
-  resize : both;
-}
-
-.post{
-  text-align: center;
-}
-
-input.hoge{
-  width: 600px;
-  margin-bottom: 20px;
-}
-
 
 /*postNotification*/
 textarea{
-  width: 600px;
+  width: 800px;
   resize : both;
+  height: 300px;
 }
 
 .post{
   text-align: center;
+  padding-bottom: 20%;
 }
 
 input.hoge{
-  width: 600px;
+  width: 800px;
+  height: 40px;
   margin-bottom: 20px;
 }
+
 
 
 
