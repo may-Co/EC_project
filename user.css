@@ -359,6 +359,12 @@ input.percent{
 
 
 
+.qoo10_button{
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+
 a.btn--yellow{
   color: #000;
   background-color: #fff100;
