@@ -304,6 +304,118 @@ table.ddd tbody th {
 }
 
 
+
+/*itemlist*/
+.product{
+  padding-bottom: 30%;
+}
+
+/* ソートボタンのセクション全体に適用 */
+#feas-sort-menu {
+    text-align: left;
+    margin: 1em auto;
+    padding: 1em 0;
+    width: 1300px;
+}
+/* id=feas-sort-menu内のすべてのdivタグに適用 */
+#feas-sort-menu div{
+    display: inline-block;
+    width: 200px;
+    text-align: center;
+    border-left: 1px solid #dadee6;
+}
+/* その最初のdivタグのみに適用 */
+#feas-sort-menu div:first-child {
+    border-left: none;
+}
+
+#feas-sort-menu div:last-child-child {
+  width: 300px
+}
+/* 見出しに適用 */
+#feas-sort-menu p.midashi {
+    display: block;
+    font-weight: bold;
+    font-size: 20px;
+    color: #5d5d5d;
+    margin-bottom: 0.5em;
+    line-height: 1;
+}
+/* すべてのソートボタンに適用 */
+#feas-sort-menu span a {
+    color: white;
+    display: inline-block;
+    width: 3em;
+    background-color: #31cc55;
+    border-radius: 3px;
+    margin: 0 3px;
+}
+
+
+dl.search1{
+	position:relative;
+	background-color:#fff;
+	border:1px solid #aaa;
+	border-radius:6px;
+  width: 300px;
+}
+dl.search1 dt{
+	padding:3px;
+  width: 200px;
+}
+dl.search1 dt input{
+	width:200px;
+	height:30px;
+	line-height:30px;
+	background:none;
+	border:none;
+}
+dl.search1 dd{
+	position:absolute;
+	top:1px;
+	right:1px;
+	width:30%;
+}
+dl.search1 dd button{
+	display:block;
+	background:#18662b;
+	width:100%;
+	height:36px;
+	line-height:36px;
+	border:none;
+	border-radius: 0 6px 6px 0;
+}
+dl.search1 dd button:hover {
+	background:#4e91e4;
+}
+dl.search1 dd button span{
+	display:block;
+	color:#FFF;
+}
+table.table{
+  width:90%;
+  margin:20px auto;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+table tr {
+  background-color: #eee;
+  padding: .35em;
+  border-bottom: 2px solid #fff;
+}
+table th,
+table td {
+  padding: 1em 10px 1em 1em;
+  border-right: 2px solid #fff;
+}
+
+table thead tr{
+  background-color: #259940;
+  color:#fff;
+}
+
+
 textarea{
   width: 600px;
   resize : both;
