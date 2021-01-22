@@ -441,6 +441,12 @@ a.btn--circle:hover {
   box-shadow: 0 2px 0 #e6d900;
 }
 
+
+
+.exhibit{
+  padding-bottom: 10%;
+}
+
 table.table{
   width:90%;
   margin:20px auto;
