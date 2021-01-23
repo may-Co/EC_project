@@ -289,13 +289,13 @@ div.ex{
   background-color: #ffffe0;
   text-align: center;
   width: 90%;
-  font-size: 30px;
+  font-size: 24px;
   font-weight: bold;
 }
 
 p.ex{
   font-weight: normal;
-  font-size: 20px;
+  font-size: 18px;
   text-align: left;
 }
 
@@ -392,7 +392,7 @@ a.btn--yellow:hover{
 
 .reference_title{
   font-weight: bold;
-  font-size: 30px;
+  font-size: 24px;
 }
 
 .reference_input{
