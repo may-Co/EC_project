@@ -484,31 +484,24 @@ table.bbb td{
 }
 
 /*user list*/
+.user_list{
+  margin:30px auto;
+  margin-left: 10%;
+  padding-bottom: 40%;
+  text-align: center;
+  width: 100%;
+}
 
 table.ccc{
-  width: 1200px;
   border-collapse:separate;
   border-spacing: 0;
-  margin:10px auto;
-}
-
-table.ccc th:first-child{
-  border-radius: 5px 0 0 0;
-}
-
-table.ccc th:last-child{
-  border-radius: 0 5px 0 0;
-  border-right: 1px solid #3c6690;
+  width: 1200px;
 }
 
 table.ccc th{
   text-align: center;
   color:white;
-  background: linear-gradient(#829ebc,#225588);
-  border-left: 1px solid #3c6690;
-  border-top: 1px solid #3c6690;
-  border-bottom: 1px solid #3c6690;
-  box-shadow: 0px 1px 1px rgba(255,255,255,0.3) inset;
+  background:#259940;
   width: 25%;
   padding: 10px 0;
 }
@@ -517,21 +510,11 @@ table.ccc td{
   text-align: center;
   border-left: 1px solid #a8b7c5;
   border-bottom: 1px solid #a8b7c5;
-  border-top:none;
-  box-shadow: 0px -3px 5px 1px #eee inset;
   width: 25%;
   padding: 10px 0;
+  background-color: #effff7;
 }
 
 table.ccc td:last-child{
   border-right: 1px solid #a8b7c5;
 }
-
-table.ccc tr:last-child td:first-child {
-  border-radius: 0 0 0 5px;
-}
-
-table.ccc tr:last-child td:last-child {
-  border-radius: 0 0 5px 0;
-}
-
