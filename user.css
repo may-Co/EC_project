@@ -79,6 +79,15 @@ p.nav-link{
  float: right;
 }
 
+a.dropdown-item{
+  margin:0 0;
+  padding:10px 40px;
+  font-size: 24px;
+}
+
+a.dropdown-item:hover{
+  background-color: #eee;
+}
 
 
 h1 {
