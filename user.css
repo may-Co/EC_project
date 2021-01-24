@@ -81,14 +81,43 @@ p.nav-link{
 
 
 
-
 h1 {
-  text-align: center;
-  padding: 1em;
-  margin:30px 40px;
- color: #010101;
- background: #D1F5FE;
- border-bottom: solid 3px #516ab6;
+  position: relative;
+  padding-left: 25px;
+  margin-left: 40px;
+}
+
+h1:before {
+  position: absolute;
+  content: '';
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border: none;
+  border-left: solid 15px transparent;
+  border-bottom: solid 15px rgb(119, 195, 223);
+}
+h1:after {
+  position: absolute;
+  content: '';
+  bottom: -3px;
+  left: 10px;
+  width: 100%;
+  border-bottom: solid 3px rgb(119, 195, 223);
+}
+
+h2 {
+  text-align: left;
+  text-decoration: underline;
+
+}
+
+h3{
+  border-bottom: solid 3px skyblue;
+  margin: 30px 50px;
+  padding-top: 50px;
+  font-size: 50px;
 }
 
 
