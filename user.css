@@ -748,9 +748,8 @@ input[type="reset"]{
 .post{
   padding-bottom: 10%;
 }
-
 .hidden_box {
-    margin: 1em 0;/*前後の余白*/
+    margin: 1em 0;
     padding: 0;
 }
 
@@ -794,7 +793,6 @@ input[type="reset"]{
   list-style:none;
   padding:10px;
   width:80%;
- margin:auto;
 }
 
 
@@ -804,10 +802,9 @@ time{
   margin-right:40px;
 }
 p{
-  color:#1c448d;
   display: inline-block;
-  text-decoration:underline;
 }
+
 .new::after{
   content:"NEW";
   color: #d10606;
