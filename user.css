@@ -30,11 +30,13 @@ li{
 }
 
 
-/*ナビゲーションバー*/nav.navbar-expand-lg, .navbar{
+nav.navbar-expand-lg, .navbar{
   font-size: 28px;
-  color: #ffffff;
+  color: #000000;
+  font-weight: bold;
+  background-color: #dcdcdc;
+  text-align: center;
 }
-
 
 nav.navbar-expand-lg{
   margin-bottom: 60px;
@@ -42,10 +44,13 @@ nav.navbar-expand-lg{
 
 .fa-book-open,.fa-clipboard-list, .fa-search, .fa-cog{
   font-size: 50px;
-  color: #ffffff;
+  color: #00afcc;
   padding-right: 10px;
 }
 
+.fa-book-open:hover,.fa-clipboard-list:hover, .fa-search:hover, .fa-cog:hover{
+color:#52bacc;
+}
 ul.navbar-nav{
   display: flex;
 }
@@ -54,29 +59,37 @@ li.nav-item{
   list-style-type: none;
   flex-grow: 1;
   text-align: center;
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 90px;
+  padding-right: 90px;
 }
 
+
 .navbar-brand{
-  color: #ffffff;
+  color: #00afcc;
+  font-weight: bold;
 }
 
 li + li {
-  border-left: 1px solid #fff;
+  border-left: 1px solid #00afcc;
 }
 
 a.nav-link{
-  color: #ffffff;
+  color: #000000;
+  font-weight: bold;
 }
+
+a.nav-link:hover{
+  color:#696969;
+}
+
+
 
 p.nav-link{
   text-align: right;
 }
 
 .navbar-toggler .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
- float: right;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,157,191,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
 a.dropdown-item{
@@ -88,7 +101,6 @@ a.dropdown-item{
 a.dropdown-item:hover{
   background-color: #eee;
 }
-
 
 h1 {
   position: relative;
