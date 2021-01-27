@@ -14,14 +14,14 @@
 
  <!-- ====ヘッダー（ナビゲーションバー==== -->
   <div th:fragment="template">
-<nav class="navbar bg-primary ">
+<nav class="navbar">
 <a class="navbar-brand" href="./home.html">LOGO</a>
 <li class="nav-item">
   <p class="nav-link">接続状態：</p>
 </li>
 </nav>
 
- <nav class="navbar navbar-expand-lg bg-primary p-2">
+ <nav class="navbar navbar-expand-lg p-3">
    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
      <span class="navbar-toggler-icon"></span>
    </button>
@@ -44,9 +44,6 @@
            <a class="dropdown-item" href="./search_url.html">CSV検索</a>
          </div>
        </li>
-     </ul>
-
-     <ul class="navbar-nav navbar-expand-lg">
 <li class="nav-item">
    <a class="nav-link" href="./set.html"><i class="fas fa-cog"></i>設定</a>
 
