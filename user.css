@@ -560,6 +560,7 @@ table.table{
   width:90%;
   margin:20px auto;
   text-align: center;
+  margin-bottom: 100px;
 }
 
 table tr {
@@ -578,14 +579,50 @@ table thead tr{
   color:#fff;
 }
 
-.deleate{
+button.deleate{
   text-decoration: underline;
   color:#ff4500;
   font-weight: bold;
+  border-style: none;
 }
 
-.deleate:hover{
+button.deleate:hover{
 color:#dc143c;
+}
+
+i.fa-exclamation-triangle{
+  text-align: center;
+  font-size: 30px;
+  color: #ffff00;
+  margin: 10px;
+}
+
+.confirm{
+  background-color: #333333;
+  padding: 20px;
+  width: 700px;
+  height: auto;
+  font-size: 24px;
+  color: #ffffff;
+  text-align: center;
+}
+
+button.no{
+  margin-right: 20px;
+}
+
+a.yes{
+  color: #ffffff;
+  background-color: #dc143c;
+  padding: 15px 20px;
+  margin-right: 20px;
+  border-style: solid;
+  border-width: medium;
+}
+
+a.yes:hover{
+border-color: #000000;
+text-decoration: none;
 }
 
 
