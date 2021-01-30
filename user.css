@@ -25,16 +25,13 @@ body{
   font-weight: bold;
 }
 
-li{
-  list-style: none;
-}
 
-
+/*ナビゲーションバー*/
 nav.navbar-expand-lg, .navbar{
   font-size: 28px;
   color: #000000;
   font-weight: bold;
-  background-color: #dcdcdc;
+  background-color: #00ccbb;
   text-align: center;
 }
 
@@ -44,12 +41,12 @@ nav.navbar-expand-lg{
 
 .fa-book-open,.fa-clipboard-list, .fa-search, .fa-cog{
   font-size: 50px;
-  color: #00afcc;
+  color: #ffffff;
   padding-right: 10px;
 }
 
 .fa-book-open:hover,.fa-clipboard-list:hover, .fa-search:hover, .fa-cog:hover{
-color:#52bacc;
+color:#f5f5f5;
 }
 ul.navbar-nav{
   display: flex;
@@ -70,7 +67,7 @@ li.nav-item{
 }
 
 li + li {
-  border-left: 1px solid #00afcc;
+  border-left: 1px solid #ffffff;
 }
 
 a.nav-link{
