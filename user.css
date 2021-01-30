@@ -142,6 +142,24 @@ h3{
 }
 
 
+/*Button*/
+
+button.btn--blue{
+  margin-top: 10px;
+  padding:10px 30px;
+  color: #fff;
+background-color: #00ab9e;
+letter-spacing: 2px;
+font-size: 20px;
+text-align: center;
+}
+
+button.btn--blue:hover{
+  color: #fff;
+  background: #00998c;
+}
+
+
 /* login Form*/
 .login{
   padding-top: 70px;
@@ -289,20 +307,6 @@ p.key{
   outline: none;
 }
 
-button.btn--blue{
-  margin-top: 20px;
-  padding:10px 30px;
-  color: #fff;
-background-color: #00bfff;
-letter-spacing: 2px;
-font-size: 20px;
-text-align: center;
-}
-
-button.btn--blue:hover{
-  color: #fff;
-  background: #1e90ff;
-}
 
 
 /*CSV Insert*/
@@ -545,21 +549,27 @@ button.btn-primary{
 }
 
 
+a.btn--orange {
+  color: #fff;
+  background-color: #f15a1f;
+}
+
+a.btn--orange:hover {
+  color: #fff;
+  background: #f56500;
+}
+
+a.btn--shadow {
+  -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+}
+
 a.btn--circle {
   border-radius: 50%;
   line-height: 100px;
   width: 100px;
   height: 100px;
   padding: 0;
-  -webkit-box-shadow: 0 5px 0 #e6d900;
-  box-shadow: 0 5px 0 #e6d900;
-}
-
-a.btn--circle:hover {
-  -webkit-transform: translate(0, 3px);
-  transform: translate(0, 3px);
-  -webkit-box-shadow: 0 2px 0 #e6d900;
-  box-shadow: 0 2px 0 #e6d900;
 }
 
 
@@ -937,6 +947,27 @@ a.set{
   background-color: #84c4ff;
   color:#ffffff;
   text-align: center;
+}
+
+
+
+/*ショップ商品検索*/
+.shop_ID{
+  margin-top:30px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  display: block;
+  padding-bottom: 50px;
+  font-size: 25px;
+}
+
+textarea.shop_ID{
+  margin-top: 10px;
+  margin-bottom: 0px;
+  width:900px;
+  padding-bottom: 240px;
+  text-align: left;
 }
 
 /*エラー画面*/
