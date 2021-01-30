@@ -13,29 +13,38 @@ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
         <html xmlns:th="http://www.thymeleaf.org"
       xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 
-<body style="background-color:whitesmoke";>
-
+<body>
+<div class="full-page">
 
     <!-- ====テンプレート読み込み==== -->
       <div th:insert="user/navbar::template"></div>
+  
+  
+<!--エラ〜メッセージ-->
+        <p class="error_message">このアカウントはQoo10に登録されていません。入力内容をご確認ください。<br>
+        Qoo10アカウントとの接続に失敗しました。もう一度やり直して下さい。</p>
+
 
 <!-- Qoo10の販売者入力 -->
-<div class="form">
-<div class="form-wrapper2">
-<p class="key">Qoo10アカウント登録</p>
+<div class="account">
+<p class="key"><i class="fas fa-user-alt person"></i>Qoo10アカウント登録</p>
+<div class="form_account">
 <div class="form-item2">
 <label for="email"></label>
-<input type="email" name="email" required="required" placeholder="Eメールアドレスまたは販売者ID"></input>
+<p>Eメールアドレスまたは販売者ID<input type="email" name="email" required="required"></input></p>
 </div>
 <div class="form-item2">
   <label for="APIキー"></label>
-  <input type="text" name="key" required="required" placeholder="APIキー"></input>
+  <p>APIキー</p>
+  <input type="text" name="key" required="required"></input>
 </div>
 <div class="form-item2">
 <label for="password"></label>
-<input type="text" name="password" required="required" placeholder="パスワード"></input>
+<p>パスワード</p>
+<input type="text" name="password" required="required"></input>
 </div>
-<button type="submit" class="btn-sf-like btn-lg">登録</button>
+<button type="submit" class="btn btn--blue">登録</button>
+</div>
 </div>
 </div>
 

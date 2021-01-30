@@ -1,5 +1,28 @@
-.body{
-  font-family: "Avnenir Next"
+
+body{
+  margin:0;
+  padding:0;
+ font-family: "Avnenir Next"
+}
+
+/*背景色*/
+.full-page{
+    width: 100%;
+    height: 100%;
+    background-color: #f5f5f5;
+}
+
+.error_message{
+  color:#ff0000;
+  border: 1px solid;
+  border-color: #ff0000;
+  text-align: center;
+  margin:20px auto;
+  margin-left: 10%;
+  width: 80%;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 li{
@@ -7,79 +30,164 @@ li{
 }
 
 
-/*ナビゲーションバー*/
-nav.navbar-expand-lg{
-  font-size: 20px;
+nav.navbar-expand-lg, .navbar{
+  font-size: 28px;
+  color: #000000;
+  font-weight: bold;
+  background-color: #dcdcdc;
   text-align: center;
-
 }
 
+nav.navbar-expand-lg{
+  margin-bottom: 60px;
+}
+
+.fa-book-open,.fa-clipboard-list, .fa-search, .fa-cog{
+  font-size: 50px;
+  color: #00afcc;
+  padding-right: 10px;
+}
+
+.fa-book-open:hover,.fa-clipboard-list:hover, .fa-search:hover, .fa-cog:hover{
+color:#52bacc;
+}
 ul.navbar-nav{
   display: flex;
 }
 
 li.nav-item{
   list-style-type: none;
-  color: #ffffff;
   flex-grow: 1;
   text-align: center;
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 90px;
+  padding-right: 90px;
+}
+
+
+.navbar-brand{
+  color: #00afcc;
+  font-weight: bold;
 }
 
 li + li {
-  border-left: 1px solid #fff;
+  border-left: 1px solid #00afcc;
 }
+
+a.nav-link{
+  color: #000000;
+  font-weight: bold;
+}
+
+a.nav-link:hover{
+  color:#696969;
+}
+
+
 
 p.nav-link{
   text-align: right;
 }
 
+.navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,157,191,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
 
+a.dropdown-item{
+  margin:0 0;
+  padding:10px 40px;
+  font-size: 24px;
+}
 
-/* login Form Layout */
-.form-wrapper {
-  background: #fafafa;
-  margin: 3em auto;
-  padding: 0 1em;
-  max-width: 370px;
+a.dropdown-item:hover{
+  background-color: #eee;
 }
 
 h1 {
-  text-align: center;
-  padding: 1em 0;
+  position: relative;
+  padding-left: 25px;
+  margin-left: 40px;
+}
+
+h1:before {
+  position: absolute;
+  content: '';
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border: none;
+  border-left: solid 15px transparent;
+  border-bottom: solid 15px rgb(119, 195, 223);
+}
+h1:after {
+  position: absolute;
+  content: '';
+  bottom: -3px;
+  left: 10px;
+  width: 100%;
+  border-bottom: solid 3px rgb(119, 195, 223);
 }
 
 h2 {
-  background: linear-gradient(transparent 70%, #a7d6ff 70%);
+  text-align: left;
+  text-decoration: underline;
+
 }
 
 h3{
   border-bottom: solid 3px skyblue;
-  position: relative;
+  margin: 30px 50px;
+  padding-top: 50px;
+  font-size: 50px;
 }
 
-form {
-  padding: 0 1.5em;
-  align: center;
+
+/*Button*/
+
+button.btn--blue{
+  margin-top: 10px;
+  padding:10px 30px;
+  color: #fff;
+background-color: #00ab9e;
+letter-spacing: 2px;
+font-size: 20px;
+text-align: center;
+}
+
+button.btn--blue:hover{
+  color: #fff;
+  background: #00998c;
+}
+
+
+/* login Form*/
+.login{
+  padding-top: 70px;
+  padding-bottom: 50%;
+}
+
+.form-wrapper {
+  background: #fafafa;
+  margin: 0em auto;
+  margin-top: 0px;
+  padding: 50px 1em;
+  max-width: 370px;
 }
 
 .form-item {
   margin-bottom: 0.75em;
   width: 100%;
   align: center;
+  padding: 0 1.5em;
 }
 
 .form-item input {
   align-items: center;
-  background: #fafafa;
-  border: none;
-  border-bottom: 2px solid #e9e9e9;
+  background: #ffffff;
+  border: 2px solid #e9e9e9;
   color: #666;
-  font-family: 'Open Sans', sans-serif;
   font-size: 1em;
   height: 50px;
-  border-color:0.3s;
   width: 300px;
 }
 
@@ -94,22 +202,16 @@ form {
 }
 
 .button-panel .button {
-  background: #f16272;
-  border: none;
-  color: #fff;
+  background: #5a7be0;
   cursor: pointer;
   height: 50px;
-  font-family: 'Open Sans', sans-serif;
   font-size: 1.2em;
-  letter-spacing: 0.05em;
   text-align: center;
-  text-transform: uppercase;
-  transition: background 0.3s ease-in-out;
   width: 100%;
 }
 
 .button:hover {
-  background: #ee3e52;
+  background: #4169e2;
 }
 
 .form-footer {
@@ -118,30 +220,22 @@ form {
   text-align: center;
 }
 
-.form-footer a {
-  color: #8c8c8c;
-  text-decoration: none;
-  transition: border-color 0.3s;
-}
-
-.form-footer a:hover {
-  border-bottom: 1px dotted #8c8c8c;
-}
 
 
 /*アカウント登録　接続状態*/
 p.connection_box{
-  width:500px; height:120px;
-  margin:10px auto;
+  width:40%; height:120px;
+  margin:40px auto;
   padding:20px;
   border:2px solid black;
-  background-color: #f5f5f5;
+  background-color: #ffffff;
   font-size: 40px;
   text-align: left;
 }
 
 .connection{
   text-align: center;
+  height: 700px;
 }
 
 a.btn--orange {
@@ -162,22 +256,41 @@ a.btn--shadow {
 
 /* アカウント登録　販売者入力キー　*/
 
-.form-wrapper2 {
-  background-image: linear-gradient(-225deg, #9EFBD3 0%, #57E9F2 48%, #45D4FB 100%);
-  margin: 30px auto;
-  padding: 60px;
-  max-width: 800px;;
-  text-align: center;
+.account{
+  margin: 0px auto;
+  margin-left: auto;
+  padding-bottom: 100px;
+  width: 1200px;
 }
 
 p.key{
   font-size: 30px;
-  text-decoration: underline;
+  text-align: left;
+}
+
+.person{
+  background-color: #6495ed;
+  border-radius: 50%;
+  color: #ffffff;
+  margin:20px 20px;
+  padding: 20px 20px;
+}
+
+.form_account{
+  border-style: solid;
+  border-width: thin;
+  margin: 0px auto;
+  max-width: 900px;
+  padding: 30px;
+  text-align: center;
+  background-color: #e5f2ff;
 }
 
 .form-item2 {
   margin-bottom: 0.75em;
-  width: 100%;
+  text-align: left;
+  font-weight: bold;
+  font-size: 18px;
 }
 
 .form-item2 input {
@@ -185,9 +298,8 @@ p.key{
   border-bottom: 2px solid #e9e9e9;
   color: #666;
   font-family: 'Open Sans', sans-serif;
-  font-size: 1em;
   height: 50px;
-  width: 100%;
+  width: 840px;
 }
 
 .form-item2 input:focus {
@@ -195,39 +307,33 @@ p.key{
   outline: none;
 }
 
-.btn-sf-like {
-  position: relative;
-  display: inline-block;
+
+
+/*CSV Insert*/
+.csv{
+  margin:30px auto;
+  text-align: center;
+  height:690px;
+}
+
+.csv_serect{
+  font-size: 24px;
   font-weight: bold;
-  text-decoration: none;
-  color: #FFF;
-  text-shadow: 0 0 5px rgba(255, 255, 255, 0.73);
-  padding: 0.5em 1em;
+}
+
+.csv_box{
+  border-style: solid;
+  background-color: #e0efff;
+  border-width: thin;
+  width: 60%;
   margin:20px auto;
-  background: #00bcd4;
-  border-top: solid 3px #00a3d4;
-  border-bottom: solid 3px #00a3d4;
+  text-align: center;
+  padding:20px 30px;
 }
 
-.btn-sf-like:hover {
-  text-shadow: -6px 0px 15px rgba(255, 255, 240, 0.83),
-               6px 0px 15px rgba(255, 255, 240, 0.83);
-}
-
-
-
-/*商品登録　Q00１０へ出品する*/
-a.btn--yellow{
-  color: #000;
-  background-color: #fff100;
-  border-bottom: 5px solid #ccc100;
-}
-
-a.btn--yellow:hover{
-  margin-top: 3px;
-  color: #000;
-  background: # fff20a;
-  border-bottom: 2px solid #ccc100;
+.border-dark{
+  font-size: 20px;
+  margin:10px;
 }
 
 /*販売価格設定*/
@@ -237,13 +343,13 @@ div.ex{
   background-color: #ffffe0;
   text-align: center;
   width: 90%;
-  font-size: 30px;
+  font-size: 24px;
   font-weight: bold;
 }
 
 p.ex{
   font-weight: normal;
-  font-size: 20px;
+  font-size: 18px;
   text-align: left;
 }
 
@@ -257,7 +363,7 @@ p.ex{
 
 p.sale{
  border-bottom: double;
- border-color: #ff0000;
+ border-color: #00bfff;
  border-width: 5px;
  width: 100%;
  margin:10px auto;
@@ -294,17 +400,86 @@ input.percent{
   background-color: #fff;
 }
 
-.btn-warning{
+.refresh{
   margin-bottom: 40px;
   margin-left: 50%;
   text-align: center;
-  width: 80px;
+  background-color: #00bfff;
+  color:#ffffff;
+  padding:10px 30px;
+  letter-spacing: 12px;
+  font-weight: bold; 
 }
+
+
+
+.qoo10_button{
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+
+a.btn--yellow{
+  color: #000;
+  background-color: #fff100;
+  border-bottom: 5px solid #ccc100;
+}
+
+a.btn--yellow:hover{
+  margin-top: 18px;
+  color: #000;
+  background: #fff20a;
+  border-bottom: 2px solid #ccc100;
+}
+
+/*参考価格設定*/
+
+.reference{
+  font-size: 20px;
+  text-align: center;
+  margin: 30px auto;
+  padding-top: 60px;
+  background-color: #e5f2ff;
+  width:80%;
+  height: 580px;
+}
+
+.reference_title{
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.reference_input{
+  text-align: center;
+  background-color: #ccf2ff;
+  padding: 20px 20px;
+  font-size: 18px;
+  width: 60%;
+  margin:20px auto;
+}
+
+a.btn--orange {
+  color: #fff;
+  background-color: #eb6100;
+  border-bottom: 5px solid #b84c00;
+}
+a.btn--orange:hover {
+  margin-top: 3px;
+  color: #fff;
+  background: #f56500;
+  border-bottom: 2px solid #b84c00;
+}
+a.btn--shadow {
+  -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+}
+
+
 
 /*signup*/
 
 h4{
-color: #43A047;
+color: #0a84ff;
 text-align: center;
 padding: 2em 0;
 }
@@ -316,6 +491,7 @@ hr{
 
 .col-sm-4{
   margin:10px auto;
+    height: 800px;
 }
 
 button.btn-primary{
@@ -324,9 +500,8 @@ button.btn-primary{
   float: right;
 }
 
-
 .form-froup{
-  margin:10pc auto;
+  margin:10px auto;
   text-align:center;
 }
 
@@ -374,27 +549,40 @@ button.btn-primary{
 }
 
 
+a.btn--orange {
+  color: #fff;
+  background-color: #f15a1f;
+}
+
+a.btn--orange:hover {
+  color: #fff;
+  background: #f56500;
+}
+
+a.btn--shadow {
+  -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+}
+
 a.btn--circle {
   border-radius: 50%;
   line-height: 100px;
   width: 100px;
   height: 100px;
   padding: 0;
-  -webkit-box-shadow: 0 5px 0 #e6d900;
-  box-shadow: 0 5px 0 #e6d900;
 }
 
-a.btn--circle:hover {
-  -webkit-transform: translate(0, 3px);
-  transform: translate(0, 3px);
-  -webkit-box-shadow: 0 2px 0 #e6d900;
-  box-shadow: 0 2px 0 #e6d900;
+
+
+.exhibit{
+  padding-bottom: 10%;
 }
 
 table.table{
   width:90%;
   margin:20px auto;
   text-align: center;
+  margin-bottom: 100px;
 }
 
 table tr {
@@ -413,14 +601,50 @@ table thead tr{
   color:#fff;
 }
 
-.deleate{
+button.deleate{
   text-decoration: underline;
   color:#ff4500;
   font-weight: bold;
+  border-style: none;
 }
 
-.deleate:hover{
+button.deleate:hover{
 color:#dc143c;
+}
+
+i.fa-exclamation-triangle{
+  text-align: center;
+  font-size: 30px;
+  color: #ffff00;
+  margin: 10px;
+}
+
+.confirm{
+  background-color: #333333;
+  padding: 20px;
+  width: 700px;
+  height: auto;
+  font-size: 24px;
+  color: #ffffff;
+  text-align: center;
+}
+
+button.no{
+  margin-right: 20px;
+}
+
+a.yes{
+  color: #ffffff;
+  background-color: #dc143c;
+  padding: 15px 20px;
+  margin-right: 20px;
+  border-style: solid;
+  border-width: medium;
+}
+
+a.yes:hover{
+border-color: #000000;
+text-decoration: none;
 }
 
 
@@ -468,10 +692,12 @@ dl.search1 dd button span{
 }
 
 /*ショップ設定*/
-form{
-	width:100%; /*お好みで調整してください*/
-	margin:0 auto;
+.shop{
+  margin:40px auto;
+  margin:0 auto;
+  margin-left: 60px;
 }
+
 .inputs{
 	overflow: hidden;
 	margin-bottom: 20px;
@@ -479,7 +705,7 @@ form{
 .label_aaa{
 	float: left;
 	width:300px;
-	border-left: solid 3px #FF6701;
+	border-left: solid 3px #00bfff;
 	padding-left: 10px;
   font-size: 20px;
 }
@@ -508,10 +734,10 @@ textarea{
 }
 .btn-area{
 	text-align: center;
-　　　　 padding-bottom: 100px;
+  padding-bottom: 100px;
 }
 input[type="submit"]{
-	background: #FF6701;
+	background: #00bfff;
 	border: none;
 	color: #fff;
 	font-size:15px;
@@ -520,6 +746,7 @@ input[type="submit"]{
 	margin: 0 10px;
 	border-radius: 10px;
 }
+
 input[type="reset"]{
 	background: #aaa;
 	border: none;
@@ -576,19 +803,21 @@ input[type="reset"]{
 	left: -0.25rem;
 	width: 1.25rem;
 	height: 1.25rem;
-	background: #da3c41;
+	background: #00bfff;
 }
 .cp_ipradio .option-input:checked:before {
 	-webkit-transform: scale(0, 0);
 	        transform: scale(0, 0);
-	border-width: 0.625rem;
-	border-color: #da3c41;
 }
+
 
 /*ユーザーのホームのところ*/
 /*全体*/
+.post{
+  padding-bottom: 10%;
+}
 .hidden_box {
-    margin: 1em 0;/*前後の余白*/
+    margin: 1em 0;
     padding: 0;
 }
 
@@ -632,7 +861,6 @@ input[type="reset"]{
   list-style:none;
   padding:10px;
   width:80%;
- margin:auto;
 }
 
 
@@ -642,10 +870,9 @@ time{
   margin-right:40px;
 }
 p{
-  color:#1c448d;
   display: inline-block;
-  text-decoration:underline;
 }
+
 .new::after{
   content:"NEW";
   color: #d10606;
@@ -662,6 +889,7 @@ p{
 .input_url{
   width: 100%;
   text-align: center;
+  height: 900px;
 }
 
 input.url{
@@ -669,46 +897,78 @@ input.url{
   margin:10px auto;
 }
 
+.amazon{
+  font-size: 20px;
+}
 
 
 /*set.html*/
+.set01{
+  height: 750px;
+}
+
+.set_container{
+  margin-left: 20px;
+  margin-right: 20px;
+  display: flex;
+}
+
 .set{
+position: relative;
 text-align: center;
-margin:50px auto;
+margin:90px 15px;
+padding-top: 20px;
+padding-left: 15px;
+padding-right: 15px;
+border-style: solid;
+border-width: thin;
 }
 
-i{
-  font-size: 40px;
-  margin-right: 10px;
+a.set{
+  position:absolute;
+  top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   text-indent:-999px;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+  border-style: none;
 }
 
-.set_price01,.set_price02,.set_account,.set_shop,.set_connection{
-  padding: 30px 40px;
-  margin-bottom: 30px;
-  width: 700px;
-  font-size: 30px;
+.icon{
+  font-size: 100px;
+  margin-bottom: 40px;
+  padding-top: 50px;
+  width:200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #84c4ff;
+  color:#ffffff;
+  text-align: center;
 }
 
-.set_price01{
-  background-color: #00bfff;
+
+
+/*ショップ商品検索*/
+.shop_ID{
+  margin-top:30px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  display: block;
+  padding-bottom: 50px;
+  font-size: 25px;
 }
 
-.set_price02{
-  background-color: #ff00ff;
+textarea.shop_ID{
+  margin-top: 10px;
+  margin-bottom: 0px;
+  width:900px;
+  padding-bottom: 240px;
+  text-align: left;
 }
-
-.set_shop{
-  background-color: #00fa9a;
-}
-
-.set_account{
-  background-color: #ffd700;
-}
-
-.set_connection{
-  background-color: #ff7f50;
-}
-
 
 /*エラー画面*/
 .error{
@@ -716,7 +976,7 @@ text-align: center;
 margin-top: 40px;
 }
 
-.fas{
+.fa-exclamation-triangle{
   color:#dcdcdc;
   margin:20px auto;
   font-size: 90px;

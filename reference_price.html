@@ -1,33 +1,41 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 
- <html lang="ja" dir="ltr"xmlns:th="http://www.thymeleaf.org"
- xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
-   <head>
-     <meta charset="utf-8">
-     <title>参考価格設定</title>
-      <link rel="stylesheet" href="../CSS/user.css"
-     <!-- Bootstrap CSS -->
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
-     </head>
-   <body style="background-color:whitesmoke";>
+<html lang="ja" dir="ltr" xmlns:th="http://www.thymeleaf.org"
+xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+  <head>
+    <meta charset="utf-8">
+    <title>参考価格設定</title>
+    <link rel="stylesheet" href="../CSS/user.css"></link>
+  <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+  </head>
+<body>
+<div class="full-page">
 
-<h2>参考価格設定</h2>
+
+
+<h1>参考価格設定</h1>
+
  <div class="reference">
-<h class="reference_title">Amazon販売価格の〇〇%の価格をQoo10の参考価格に設定します。<br>
-Qoo10参考価格＝Amazon販売価格×〇〇％</h><br>
+<p class="reference_title">Amazon販売価格の〇〇%の価格をQoo10の参考価格に設定します。<br>
+Qoo10参考価格＝Amazon販売価格×〇〇％</p><br>
 <p class="reference_p">  例）3000円（Amazonの販売価格）×　10％　＝　3,300円（Qoo10の参考価格）</p><br>
-</div>
+
+    <!--エラ〜メッセージ-->
+            <p class="error_message">更新に失敗しました。</p>
+
 <div class="reference_input">
  <p>Qoo10参考価格＝Amazon販売価格　×　<input type="text" placeholder="例）20"> %</p> <br>
-<a href="" class="btn btn--orange btn--cubic btn--shadow">更新</a>
+   <button type="submit" class="btn btn--blue">更新</button>
+
 </div>
-
-
+</div>
            <!-- Optional JavaScript -->
            <!-- jQuery first, then Popper.js, then Bootstrap JS -->
            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
             <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</div>
  </body>
         </html>
