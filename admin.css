@@ -114,6 +114,7 @@ h3{
   font-size: 50px;
 }
 
+
 /*Button*/
 
 button.btn--blue{
@@ -353,7 +354,6 @@ table.ddd tbody th {
 }
 
 
-
 /*itemlist*/
 .product{
   padding-bottom: 30%;
@@ -584,3 +584,18 @@ padding-bottom: 400px;
   margin-bottom: 50px;
 }
 
+
+/*成功しました画面*/
+.success{
+margin:0px auto;
+padding-top: 100px;
+text-align: center;
+padding-top: 20%;
+padding-bottom: 400px;
+}
+
+.fa-check-circle{
+  color:#7cfc00;
+  font-size: 80px;
+  margin-bottom: 50px;
+}
