@@ -506,10 +506,10 @@ button.btn-primary{
 
 /* ソートボタンのセクション全体に適用 */
 #feas-sort-menu {
-    text-align: left;
-    margin: 1em auto;
+     text-align: left;
+    margin: 30px auto;
     padding: 1em 0;
-    width: 1200px;
+    width: 1300px;
 }
 /* id=feas-sort-menu内のすべてのdivタグに適用 */
 #feas-sort-menu div{
@@ -540,7 +540,7 @@ button.btn-primary{
     color: white;
     display: inline-block;
     width: 3em;
-    background-color: #54bee6;
+    background-color: #00ab9e;
     border-radius: 3px;
     margin: 0 3px;
 }
