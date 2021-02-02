@@ -25,16 +25,13 @@ body{
   font-weight: bold;
 }
 
-li{
-  list-style: none;
-}
 
-
+/*ナビゲーションバー*/
 nav.navbar-expand-lg, .navbar{
   font-size: 28px;
   color: #000000;
   font-weight: bold;
-  background-color: #dcdcdc;
+  background-color: #00ccbb;
   text-align: center;
 }
 
@@ -44,12 +41,12 @@ nav.navbar-expand-lg{
 
 .fa-book-open,.fa-clipboard-list, .fa-search, .fa-cog{
   font-size: 50px;
-  color: #00afcc;
+  color: #ffffff;
   padding-right: 10px;
 }
 
 .fa-book-open:hover,.fa-clipboard-list:hover, .fa-search:hover, .fa-cog:hover{
-color:#52bacc;
+color:#f5f5f5;
 }
 ul.navbar-nav{
   display: flex;
@@ -70,7 +67,7 @@ li.nav-item{
 }
 
 li + li {
-  border-left: 1px solid #00afcc;
+  border-left: 1px solid #ffffff;
 }
 
 a.nav-link{
@@ -509,10 +506,10 @@ button.btn-primary{
 
 /* ソートボタンのセクション全体に適用 */
 #feas-sort-menu {
-    text-align: left;
-    margin: 1em auto;
+     text-align: left;
+    margin: 30px auto;
     padding: 1em 0;
-    width: 1200px;
+    width: 1300px;
 }
 /* id=feas-sort-menu内のすべてのdivタグに適用 */
 #feas-sort-menu div{
@@ -543,7 +540,7 @@ button.btn-primary{
     color: white;
     display: inline-block;
     width: 3em;
-    background-color: #54bee6;
+    background-color: #00ab9e;
     border-radius: 3px;
     margin: 0 3px;
 }
@@ -976,7 +973,7 @@ text-align: center;
 margin-top: 40px;
 }
 
-.fa-exclamation-triangle{
+i.fa-exclamation-triangle{
   color:#dcdcdc;
   margin:20px auto;
   font-size: 90px;
