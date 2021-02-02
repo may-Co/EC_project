@@ -39,30 +39,27 @@ nav.navbar-expand-lg{
   margin-bottom: 60px;
 }
 
-.fa-book-open,.fa-clipboard-list, .fa-search, .fa-cog{
+.fa-clipboard-list, .fa-search,.fa-shopping-cart, .fa-history,.fa-cog{
   font-size: 50px;
   color: #ffffff;
   padding-right: 10px;
 }
 
-.fa-book-open:hover,.fa-clipboard-list:hover, .fa-search:hover, .fa-cog:hover{
+.fa-clipboard-list:hover, .fa-search:hover, .fa-shopping-cart,.fa-history:hover, .fa-cog:hover{
 color:#f5f5f5;
-}
-ul.navbar-nav{
-  display: flex;
 }
 
 li.nav-item{
   list-style-type: none;
   flex-grow: 1;
   text-align: center;
-  padding-left: 90px;
-  padding-right: 90px;
+  padding-left: 135px;
+  padding-right: 135px;
 }
 
 
 .navbar-brand{
-  color: #00afcc;
+  color: #00ab9e;
   font-weight: bold;
 }
 
