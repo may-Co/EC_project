@@ -585,6 +585,27 @@ padding-bottom: 400px;
 }
 
 
+
+/*エラー画面*/
+.error{
+text-align: center;
+margin-top: 40px;
+}
+
+
+i.fa-exclamation-triangle{
+  color:#dcdcdc;
+  margin:20px auto;
+  font-size: 90px;
+  width: 50px;
+}
+
+p.error{
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+}
+
 /*成功しました画面*/
 .success{
 margin:0px auto;
