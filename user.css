@@ -982,3 +982,20 @@ p.error{
   font-weight: bold;
   text-align: center;
 }
+
+
+
+/*成功しました画面*/
+.success{
+margin:0px auto;
+padding-top: 100px;
+text-align: center;
+padding-top: 20%;
+padding-bottom: 400px;
+}
+
+.fa-check-circle{
+  color:#7cfc00;
+  font-size: 80px;
+  margin-bottom: 50px;
+}
