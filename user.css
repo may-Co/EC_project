@@ -963,6 +963,42 @@ textarea.shop_ID{
   text-align: left;
 }
 
+
+/*商品名検索結果*/
+.search_result{
+  margin:30px auto;
+  text-align: center;
+  padding-bottom: 100px;
+}
+
+table th.search_result{
+width: 400px;
+padding-bottom: 24px;
+background-color:#00ab9e;
+color:#ffffff;
+font-size: 20px;
+}
+
+
+
+/*purchase_histry*/
+.purchase{
+  margin:0px auto;
+  margin-top: 40px;
+  padding-bottom: 70px;
+}
+
+table.purchase_histry{
+    width:95%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.purchase_histry th{
+  background-color: #00998c;
+  color:#ffffff;
+}
+
 /*エラー画面*/
 .error{
 text-align: center;
