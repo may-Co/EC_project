@@ -14,7 +14,8 @@
 
  <!-- ====ヘッダー（ナビゲーションバー==== -->
   <div th:fragment="template">
-<nav class="navbar">
+
+    <nav class="navbar">
 <a class="navbar-brand" href="./home.html"><img src="../logo/logo_01.png" class="logo"></a>
 <li class="nav-item">
   <p class="nav-link">接続状態：</p>
@@ -27,26 +28,26 @@
    </button>
    <div class="collapse navbar-collapse" id="navbarNavDropdown">
      <ul class="navbar-nav mr-auto">
-       <li class="nav-item">
-         <a class="nav-link" href="#"><i class="fas fa-book-open"></i>
-          マニュアルページ</a>
-       </li>
-       <li class="nav-item">
-         <a class="nav-link" href="./exhibit.html"><i class="fas fa-clipboard-list"></i>
-        出品リスト</a>
-       </li>
-        <li class="nav-item dropdown">
+       <li class="nav-item dropdown">
          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
          <i class="fas fa-search"></i><br>商品検索
          </a>
          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
            <a class="dropdown-item" href="./search_url.html">URL検索</a>
-           <a class="dropdown-item" href="./search_url.html">CSV検索</a>
+           <a class="dropdown-item" href="./iteminsert.html">CSV検索</a>
            <a class="dropdown-item" href="./search_item.html">ショップ商品検索</a>
          </div>
        </li>
+       <li class="nav-item">
+         <a class="nav-link" href="./exhibit.html"><i class="fas fa-clipboard-list"></i><br>
+        出品リスト</a>
+       </li>
+       <li class="nav-item">
+         <a class="nav-link" href="./purchase_histry.html"><i class="fas fa-history"></i><br>
+        注文履歴</a>
+       </li>
 <li class="nav-item">
-   <a class="nav-link" href="./set.html"><i class="fas fa-cog"></i>設定</a>
+   <a class="nav-link" href="./set.html"><i class="fas fa-cog"></i><br>設定</a>
 
  </li>
       </ul>

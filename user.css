@@ -39,30 +39,27 @@ nav.navbar-expand-lg{
   margin-bottom: 60px;
 }
 
-.fa-book-open,.fa-clipboard-list, .fa-search, .fa-cog{
+.fa-clipboard-list, .fa-search,.fa-shopping-cart, .fa-history,.fa-cog{
   font-size: 50px;
   color: #ffffff;
   padding-right: 10px;
 }
 
-.fa-book-open:hover,.fa-clipboard-list:hover, .fa-search:hover, .fa-cog:hover{
+.fa-clipboard-list:hover, .fa-search:hover, .fa-shopping-cart,.fa-history:hover, .fa-cog:hover{
 color:#f5f5f5;
-}
-ul.navbar-nav{
-  display: flex;
 }
 
 li.nav-item{
   list-style-type: none;
   flex-grow: 1;
   text-align: center;
-  padding-left: 90px;
-  padding-right: 90px;
+  padding-left: 135px;
+  padding-right: 135px;
 }
 
 
 .navbar-brand{
-  color: #00afcc;
+  color: #00ab9e;
   font-weight: bold;
 }
 
@@ -104,26 +101,25 @@ h1 {
   padding-left: 25px;
   margin-left: 40px;
 }
+h1 {
+  position: relative;
+  text-align: left;
+  margin-left: 20px;
+  margin-right: 20px;
+}
 
-h1:before {
-  position: absolute;
-  content: '';
-  bottom: -3px;
-  left: 0;
-  width: 0;
-  height: 0;
-  border: none;
-  border-left: solid 15px transparent;
-  border-bottom: solid 15px rgb(119, 195, 223);
-}
 h1:after {
+  content: "";
   position: absolute;
-  content: '';
-  bottom: -3px;
-  left: 10px;
+  left: 0;
+  bottom: 0;
   width: 100%;
-  border-bottom: solid 3px rgb(119, 195, 223);
+  height: 7px;
+  background: -webkit-repeating-linear-gradient(-45deg, #6ad1c8, #6ad1c8 2px, #fff 2px, #fff 4px);
+  background: repeating-linear-gradient(-45deg, #6ad1c8, #6ad1c8 2px, #fff 2px, #fff 4px);
 }
+
+
 
 h2 {
   text-align: left;
@@ -984,4 +980,21 @@ p.error{
   font-size: 40px;
   font-weight: bold;
   text-align: center;
+}
+
+
+
+/*成功しました画面*/
+.success{
+margin:0px auto;
+padding-top: 100px;
+text-align: center;
+padding-top: 20%;
+padding-bottom: 400px;
+}
+
+.fa-check-circle{
+  color:#7cfc00;
+  font-size: 80px;
+  margin-bottom: 50px;
 }
