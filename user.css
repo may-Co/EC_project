@@ -999,6 +999,75 @@ table.purchase_histry{
   color:#ffffff;
 }
 
+
+/*insert_NGprouse*/
+.prouse{
+  margin:0px auto;
+  margin-top: 40px;
+  text-align: center;
+  padding-bottom: 60px;
+}
+
+table.prouse{
+  width: 80%;
+  margin:0px auto;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+th.prouse,th.serect{
+  background-color: #00998c;
+  color:#ffffff;
+}
+
+th.prouse{
+  width:70%;
+  font-size: 24px;
+  padding:18px;
+  letter-spacing: 4px;
+}
+
+th.serect{
+  width:30%;
+}
+
+label {
+  display:block;
+  background-color: #ffffff;
+  padding: 6px 14px;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: center;
+  cursor: pointer;
+  border:2px solid #006DD9;
+  border-radius: 5px;
+  letter-spacing: 4px;
+  font-weight: bold;
+}
+
+label:hover{
+  background-color:#db5872;
+}
+
+input.checkbox1, .checkbox2 {
+  display: none;
+}
+
+label.checkbox1:hover{
+  background-color:#88c9e3;
+}
+
+.checkbox1:checked + label {
+  background-color: #24ade3;
+  color:#ffffff;
+}
+
+.checkbox2:checked + label {
+  background-color: #dc143c;
+  color:#ffffff;
+}
+
+
 /*エラー画面*/
 .error{
 text-align: center;
