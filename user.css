@@ -340,27 +340,29 @@ p.key{
 .csv{
   margin:30px auto;
   text-align: center;
-  height:690px;
+  padding-bottom: 10%;
 }
 
 .csv_serect{
   font-size: 24px;
-  font-weight: bold;
+  margin-bottom: 30px;
 }
 
 .csv_box{
   border-style: solid;
-  background-color: #e0efff;
+  background-color: #effff7;
   border-width: thin;
   width: 60%;
   margin:20px auto;
   text-align: center;
-  padding:20px 30px;
+  padding:30px 40px;
 }
 
 .border-dark{
   font-size: 20px;
   margin:10px;
+  margin-bottom: 30px;
+  width: 500px;
 }
 
 /*販売価格設定*/
