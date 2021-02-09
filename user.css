@@ -547,7 +547,6 @@ span.feas-sl-1-up{
 
 span.feas-sl-1-up ,span.feas-sl-1-down{
     display: inline-block;
-    color:#ffffff;
     border-style: solid;
     border-color: #ffffff;
     border-radius: 6px;
@@ -681,10 +680,23 @@ border-color: #000000;
 text-decoration: none;
 }
 
-
+/*exhibit*/
 .exhibit{
   padding-bottom: 10%;
 }
+
+.feas-sl-1-up01{
+  display: inline-block;
+  border-style: solid;
+  border-color: #ffffff;
+  border-radius: 6px;
+  border-width: thin;
+  text-align: center;
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-top: 8px;
+}
+
 
 /*ショップ設定*/
 .shop{
