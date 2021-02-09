@@ -15,57 +15,44 @@ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 
    
 <h1>出品リスト</h1>
-<!--並べ替え機能-->
- <div id="feas-sort-menu">
-   <div class="feas-sort-asin">
-     <p class="midashi">ASINで並び替え</p>
-     <span class="feas-sl-1-up"><a href="#">▲</a></span>
-     <span class="feas-sl-1-down"><a href="#">▼</a></span>
-   </div>
-   <div class="feas-sort-item">
-     <p class="midashi">商品名で並び替え</p>
-     <span class="feas-sl-1-up"><a href="#">▲</a></span>
-     <span class="feas-sl-1-down"><a href="#">▼</a></span>
-   </div>
-   <div class="feas-sort-category">
-     <p class="midashi">カテゴリで並び替え</p>
-     <span class="feas-sl-1-up"><a href="#">▲</a></span>
-     <span class="feas-sl-1-down"><a href="#">▼</a></span>
-   </div>
-   <div class="feas-sort-rank">
-     <p class="midashi">ランクで並び替え</p>
-     <span class="feas-sl-1-up"><a href="#">▲</a></span>
-     <span class="feas-sl-1-down"><a href="#">▼</a></span>
-   </div>
-     <div class="feas-sort-search">
-       <p class="midashi"></p>
-       <form action="#" name="search1" method="post">
-   <dl class="search1">
-     <dt><input type="text" name="search" value="" placeholder="検索するテキストを入力" /></dt>
-     <dd><button><span>検索</span></button></dd>
-   </dl>
- </form>
-     </div>
- </div>
+<div class="amazon">
+<p class="error_message">出品上限数に達しています。プラン名を変更するか、出品している商品を取り下げて下さい。</p>
+
+
+<dl class="search1">
+<dt><input type="text" name="search"  placeholder="検索するテキストを入力"></dt>
+<dd><button><span>検索</span></button></dd>
+</dl>
 
 <!--検索結果一覧-->
-  <div class="exhibit">
 <table class="table">
 <thead>
 <tr>
-<th scope="col">ASIN</th>
-<th scope="col">商品名</th>
-<th scope="col">カラー</th>
-<th scope="col">サイズ</th>
-<th scope="col">カテゴリ</th>
-<th scope="col">ランク</th>
+    <div id="feas-sort-menu">
+<th scope="col">ASIN<br><span class="feas-sl-1-up01"><a href="#" class="feas-sl-1-up">▲</a></span>
+  <span class="feas-sl-1-down"><a href="#" class="feas-sl-1-down">▼</a></span></th>
+<th scope="col">商品名<br><span class="feas-sl-1-up01"><a href="#" class="feas-sl-1-up">▲</a></span>
+  <span class="feas-sl-1-down"><a href="#" class="feas-sl-1-down">▼</a></span></th>
+
+<th scope="col">カテゴリ<br><span class="feas-sl-1-up01"><a href="#" class="feas-sl-1-up">▲</a></span>
+  <span class="feas-sl-1-down"><a href="#" class="feas-sl-1-down">▼</a></span></th>
+<th scope="col">ランク<br><span class="feas-sl-1-up01"><a href="#" class="feas-sl-1-up">▲</a></span>
+  <span class="feas-sl-1-down"><a href="#" class="feas-sl-1-down">▼</a></span></th>
+  <th scope="col">月間アクセス数<br><span class="feas-sl-1-up01"><a href="#" class="feas-sl-1-up">▲</a></span>
+    <span class="feas-sl-1-down"><a href="#" class="feas-sl-1-down">▼</a></span></th>
+    <th scope="col">累計アクセス数<br><span class="feas-sl-1-up01"><a href="#" class="feas-sl-1-up">▲</a></span>
+      <span class="feas-sl-1-down"><a href="#" class="feas-sl-1-down">▼</a></span></th>
+      <th scope="col">累計販売数<br><span class="feas-sl-1-up01"><a href="#" class="feas-sl-1-up">▲</a></span>
+        <span class="feas-sl-1-down"><a href="#" class="feas-sl-1-down">▼</a></span></th>
+        <th scope="col">月間販売数<br><span class="feas-sl-1-up01"><a href="#" class="feas-sl-1-up">▲</a></span>
+          <span class="feas-sl-1-down"><a href="#" class="feas-sl-1-down">▼</a></span></th>
+  <th scope="col">カラー</th>
+  <th scope="col">サイズ</th>
 <th scope="col">価格</th>
 <th scope="col"></th>
-
+</div>
 </tr>
 </thead>
-<tbody>
-
 
 <tr>
 <td></td>
@@ -75,7 +62,43 @@ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 <td></td>
 <td></td>
 <td></td>
-<td><a href="" class="deleate">削除</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>
+<!-- Simple pop-up dialog box containing a form -->
+
+<dialog id="favDialog"  class="confirm">
+  <form method="dialog">
+    <p><label><i class="fas fa-exclamation-triangle"></i>この商品をQoo10の出品から取り下げますか？
+    </label></p>
+    <menu>
+
+      <a id="confirmBtn" value="default" href="" class="yes">はい</a>
+      <button value="cancel" class="no">いいえ</button>
+    </menu>
+  </form>
+</dialog>
+
+<menu>
+  <button id="deleate" class="deleate">削除</button>
+</menu>
+<script>
+var deleateButton = document.getElementById('deleate');
+var favDialog = document.getElementById('favDialog');
+var confirmBtn = document.getElementById('confirmBtn');
+
+// "Update details" button opens the <dialog> modally
+deleateButton.addEventListener('click', function onOpen() {
+  if (typeof favDialog.showModal === "function") {
+    favDialog.showModal();
+  } else {
+    alert("The <dialog> API is not supported by this browser");
+  }
+});
+</script>
+</td>
 </tr>
 
 <tr>
@@ -86,7 +109,43 @@ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 <td></td>
 <td></td>
 <td></td>
-<td><a href="" class="deleate">削除</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>
+  <!-- Simple pop-up dialog box containing a form -->
+
+  <dialog id="favDialog"  class="confirm">
+    <form method="dialog">
+      <p><label><i class="fas fa-exclamation-triangle"></i>この商品をQoo10の出品から取り下げますか？
+      </label></p>
+      <menu>
+
+        <a id="confirmBtn" value="default" href="" class="yes">はい</a>
+        <button value="cancel" class="no">いいえ</button>
+      </menu>
+    </form>
+  </dialog>
+
+  <menu>
+    <button id="deleate" class="deleate">削除</button>
+  </menu>
+  <script>
+  var deleateButton = document.getElementById('deleate');
+  var favDialog = document.getElementById('favDialog');
+  var confirmBtn = document.getElementById('confirmBtn');
+
+  // "Update details" button opens the <dialog> modally
+  deleateButton.addEventListener('click', function onOpen() {
+    if (typeof favDialog.showModal === "function") {
+      favDialog.showModal();
+    } else {
+      alert("The <dialog> API is not supported by this browser");
+    }
+  });
+  </script>
+</td>
 </tr>
 
 
@@ -98,7 +157,43 @@ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 <td></td>
 <td></td>
 <td></td>
-<td><a href="" class="deleate">削除</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>
+  <!-- Simple pop-up dialog box containing a form -->
+
+  <dialog id="favDialog"  class="confirm">
+    <form method="dialog">
+      <p><label><i class="fas fa-exclamation-triangle"></i>この商品をQoo10の出品から取り下げますか？
+      </label></p>
+      <menu>
+
+        <a id="confirmBtn" value="default" href="" class="yes">はい</a>
+        <button value="cancel" class="no">いいえ</button>
+      </menu>
+    </form>
+  </dialog>
+
+  <menu>
+    <button id="deleate" class="deleate">削除</button>
+  </menu>
+  <script>
+  var deleateButton = document.getElementById('deleate');
+  var favDialog = document.getElementById('favDialog');
+  var confirmBtn = document.getElementById('confirmBtn');
+
+  // "Update details" button opens the <dialog> modally
+  deleateButton.addEventListener('click', function onOpen() {
+    if (typeof favDialog.showModal === "function") {
+      favDialog.showModal();
+    } else {
+      alert("The <dialog> API is not supported by this browser");
+    }
+  });
+  </script>
+</td>
 </tr>
 
 
@@ -110,7 +205,42 @@ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 <td></td>
 <td></td>
 <td></td>
-<td><a href="" class="deleate">削除</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><!-- Simple pop-up dialog box containing a form -->
+
+<dialog id="favDialog"  class="confirm">
+  <form method="dialog">
+    <p><label><i class="fas fa-exclamation-triangle"></i>この商品をQoo10の出品から取り下げますか？
+    </label></p>
+    <menu>
+
+      <a id="confirmBtn" value="default" href="" class="yes">はい</a>
+      <button value="cancel" class="no">いいえ</button>
+    </menu>
+  </form>
+</dialog>
+
+<menu>
+  <button id="deleate" class="deleate">削除</button>
+</menu>
+<script>
+var deleateButton = document.getElementById('deleate');
+var favDialog = document.getElementById('favDialog');
+var confirmBtn = document.getElementById('confirmBtn');
+
+// "Update details" button opens the <dialog> modally
+deleateButton.addEventListener('click', function onOpen() {
+  if (typeof favDialog.showModal === "function") {
+    favDialog.showModal();
+  } else {
+    alert("The <dialog> API is not supported by this browser");
+  }
+});
+</script>
+</td>
 </tr>
 
 <tr>
@@ -121,7 +251,43 @@ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 <td></td>
 <td></td>
 <td></td>
-<td><a href="" class="deleate">削除</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>
+  <!-- Simple pop-up dialog box containing a form -->
+
+  <dialog id="favDialog"  class="confirm">
+    <form method="dialog">
+      <p><label><i class="fas fa-exclamation-triangle"></i>この商品をQoo10の出品から取り下げますか？
+      </label></p>
+      <menu>
+
+        <a id="confirmBtn" value="default" href="" class="yes">はい</a>
+        <button value="cancel" class="no">いいえ</button>
+      </menu>
+    </form>
+  </dialog>
+
+  <menu>
+    <button id="deleate" class="deleate">削除</button>
+  </menu>
+  <script>
+  var deleateButton = document.getElementById('deleate');
+  var favDialog = document.getElementById('favDialog');
+  var confirmBtn = document.getElementById('confirmBtn');
+
+  // "Update details" button opens the <dialog> modally
+  deleateButton.addEventListener('click', function onOpen() {
+    if (typeof favDialog.showModal === "function") {
+      favDialog.showModal();
+    } else {
+      alert("The <dialog> API is not supported by this browser");
+    }
+  });
+  </script>
+</td>
 </tr>
 
 <tr>
@@ -132,18 +298,53 @@ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 <td></td>
 <td></td>
 <td></td>
-<td><a href="" class="deleate">削除</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>
+  <!-- Simple pop-up dialog box containing a form -->
+
+  <dialog id="favDialog"  class="confirm">
+    <form method="dialog">
+      <p><label><i class="fas fa-exclamation-triangle"></i>この商品をQoo10の出品から取り下げますか？
+      </label></p>
+      <menu>
+
+        <a id="confirmBtn" value="default" href="" class="yes">はい</a>
+        <button value="cancel" class="no">いいえ</button>
+      </menu>
+    </form>
+  </dialog>
+
+  <menu>
+    <button id="deleate" class="deleate">削除</button>
+  </menu>
+  <script>
+  var deleateButton = document.getElementById('deleate');
+  var favDialog = document.getElementById('favDialog');
+  var confirmBtn = document.getElementById('confirmBtn');
+
+  // "Update details" button opens the <dialog> modally
+  deleateButton.addEventListener('click', function onOpen() {
+    if (typeof favDialog.showModal === "function") {
+      favDialog.showModal();
+    } else {
+      alert("The <dialog> API is not supported by this browser");
+    }
+  });
+  </script>
+</td>
 </tr>
 
-
-
-</tbody>
-</header>
 
 </table>
 
-  </div>
-   </div>
+<button type="submit" class="btn btn--orange">出品する</button>
+
+</div>
+</div>
+
  　    <!-- Optional JavaScript -->
       <!-- jQuery first, then Popper.js, then Bootstrap JS-->
            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
