@@ -191,7 +191,7 @@ a.btn--blue:hover{
 /* login Form*/
 .login{
   padding-top: 70px;
-  padding-bottom: 50%;
+  padding-bottom: 25%;
 }
 
 .form-wrapper {
@@ -225,29 +225,18 @@ a.btn--blue:hover{
 }
 
 .button-panel {
-  margin: 2em 0 0;
-  width: 300px;
-}
+  margin: 30px auto;
+  margin-bottom: 0px;
+　text-align: center;
+padding-left: 28%;
 
-.button-panel .button {
-  background: #5a7be0;
-  cursor: pointer;
-  height: 50px;
-  font-size: 1.2em;
-  text-align: center;
-  width: 100%;
-}
-
-.button:hover {
-  background: #4169e2;
 }
 
 .form-footer {
   font-size: 1em;
-  padding: 2em 0;
   text-align: center;
+  margin-top: 30px;
 }
-
 
 
 /*アカウント登録　接続状態*/
