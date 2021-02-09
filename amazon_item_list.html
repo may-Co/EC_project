@@ -22,58 +22,34 @@ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 
 <h1>検索結果一覧</h1>
 
-<!--並べ替え機能-->
-  <div id="feas-sort-menu">
-    <div class="feas-sort-asin">
-      <p class="midashi">ASINで並び替え</p>
-      <span class="feas-sl-1-up"><a href="#">▲</a></span>
-      <span class="feas-sl-1-down"><a href="#">▼</a></span>
-    </div>
-    <div class="feas-sort-item">
-      <p class="midashi">商品名で並び替え</p>
-      <span class="feas-sl-1-up"><a href="#">▲</a></span>
-      <span class="feas-sl-1-down"><a href="#">▼</a></span>
-    </div>
-    <div class="feas-sort-category">
-      <p class="midashi">カテゴリで並び替え</p>
-      <span class="feas-sl-1-up"><a href="#">▲</a></span>
-      <span class="feas-sl-1-down"><a href="#">▼</a></span>
-    </div>
-    <div class="feas-sort-rank">
-      <p class="midashi">ランクで並び替え</p>
-      <span class="feas-sl-1-up"><a href="#">▲</a></span>
-      <span class="feas-sl-1-down"><a href="#">▼</a></span>
-    </div>
-    <div class="feas-sort-rank">
-      <a href="" class="btn btn--yellow btn--circle">出品する</a>
-  </div>
-      <div class="feas-sort-search">
-        <p class="midashi"></p>
-        <form action="#" name="search1" method="post">
-  	<dl class="search1">
-  		<dt><input type="text" name="search" value="" placeholder="検索するテキストを入力" /></dt>
-  		<dd><button><span>検索</span></button></dd>
-  	</dl>
-  </form>
-</div>
-</div>
-
+<div class="amazon">
 <p class="error_message">出品上限数に達しています。プラン名を変更するか、出品している商品を取り下げて下さい。</p>
 
+
+<dl class="search1">
+<dt><input type="text" name="search"  placeholder="検索するテキストを入力"></dt>
+<dd><button><span>検索</span></button></dd>
+</dl>
 
 <!--検索結果一覧-->
 <table class="table">
 <thead>
 <tr>
-<th scope="col">ASIN</th>
-<th scope="col">商品名</th>
-<th scope="col">カラー</th>
-<th scope="col">サイズ</th>
-<th scope="col">カテゴリ</th>
-<th scope="col">ランク</th>
+    <div id="feas-sort-menu">
+<th scope="col">ASIN<span class="feas-sl-1-up"><a href="#" class="feas-sl-1-up">▲</a></span>
+  <span class="feas-sl-1-down"><a href="#" class="feas-sl-1-down">▼</a></span></th>
+<th scope="col">商品名<span class="feas-sl-1-up"><a href="#" class="feas-sl-1-up">▲</a></span>
+  <span class="feas-sl-1-down"><a href="#" class="feas-sl-1-down">▼</a></span></th>
+
+<th scope="col">カテゴリ<span class="feas-sl-1-up"><a href="#" class="feas-sl-1-up">▲</a></span>
+  <span class="feas-sl-1-down"><a href="#" class="feas-sl-1-down">▼</a></span></th>
+<th scope="col">ランク<span class="feas-sl-1-up"><a href="#" class="feas-sl-1-up">▲</a></span>
+  <span class="feas-sl-1-down"><a href="#" class="feas-sl-1-down">▼</a></span></th>
+  <th scope="col">カラー</th>
+  <th scope="col">サイズ</th>
 <th scope="col">価格</th>
 <th scope="col"></th>
-
+</div>
 </tr>
 </thead>
 
@@ -338,6 +314,11 @@ deleateButton.addEventListener('click', function onOpen() {
 
 
 </table>
+
+<button type="submit" class="btn btn--orange">出品する</button>
+
+</div>
+</div>
 
 
 
