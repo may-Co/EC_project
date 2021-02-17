@@ -898,7 +898,7 @@ p{
 .input_url{
   width: 100%;
   text-align: center;
-  height: 900px;
+  padding-bottom: 25%;
 }
 
 input.url{
@@ -907,6 +907,8 @@ input.url{
 }
 
 .amazon{
+  margin-top: 40px;
+  padding-bottom: 0;
   font-size: 20px;
 }
 
