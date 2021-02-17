@@ -145,7 +145,6 @@ padding: 2em 0;
 
 button.btn--blue{
   margin:10px auto;
-  margin-left: 40%;
   padding:10px 30px;
   color: #fff;
 background-color: #00ab9e;
@@ -375,6 +374,7 @@ div.ex{
 p.ex{
   font-weight: normal;
   font-size: 18px;
+  padding-left: 300px;
   text-align: left;
 }
 
@@ -388,7 +388,7 @@ p.ex{
 
 p.sale{
  border-bottom: double;
- border-color: #00bfff;
+ border-color: #00ab9e;
  border-width: 5px;
  width: 100%;
  margin:10px auto;
