@@ -135,10 +135,17 @@ h3{
 }
 
 
+h4{
+color: #00ab9e;
+text-align: center;
+padding: 2em 0;
+}
+
 /*Button*/
 
 button.btn--blue{
-  margin-top: 10px;
+  margin:10px auto;
+  margin-left: 40%;
   padding:10px 30px;
   color: #fff;
 background-color: #00ab9e;
