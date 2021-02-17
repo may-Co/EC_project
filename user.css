@@ -502,13 +502,6 @@ a.btn--shadow {
 
 
 /*signup*/
-
-h4{
-color: #0a84ff;
-text-align: center;
-padding: 2em 0;
-}
-
 hr{
   border-width: 3px;
   border-color: #43A047;
@@ -516,21 +509,15 @@ hr{
 
 .col-sm-4{
   margin:10px auto;
-    height: 800px;
-}
-
-button.btn-primary{
-  margin:30px 40%;
-  width: 80px;
-  float: right;
+  height: 800px;
 }
 
 .form-froup{
   margin:10px auto;
-  text-align:center;
 }
-
-
+.button_signup{
+  text-align: center;
+}
 
 /*amzon_item_list*/
 .amazon{
