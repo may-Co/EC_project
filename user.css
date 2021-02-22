@@ -459,12 +459,15 @@ a.btn--yellow:hover{
 
 /*参考価格設定*/
 
+.price_set{
+  padding-bottom: 100px;
+}
 .reference{
   font-size: 20px;
   text-align: center;
   margin: 30px auto;
   padding-top: 60px;
-  background-color: #e5f2ff;
+  background-color: #ffffff;
   width:80%;
   height: 580px;
 }
@@ -476,30 +479,12 @@ a.btn--yellow:hover{
 
 .reference_input{
   text-align: center;
-  background-color: #ccf2ff;
-  padding: 20px 20px;
+  background-color: #e6fffd;
+  padding: 30px 30px;
   font-size: 18px;
   width: 60%;
   margin:20px auto;
 }
-
-a.btn--orange {
-  color: #fff;
-  background-color: #eb6100;
-  border-bottom: 5px solid #b84c00;
-}
-a.btn--orange:hover {
-  margin-top: 3px;
-  color: #fff;
-  background: #f56500;
-  border-bottom: 2px solid #b84c00;
-}
-a.btn--shadow {
-  -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
-  box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
-}
-
-
 
 /*signup*/
 hr{
