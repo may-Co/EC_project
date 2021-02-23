@@ -18,91 +18,167 @@ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
   <!-- ====テンプレート読み込み==== -->
     <div th:insert="user/navbar::template"></div>
 
-<div class="post">
-<ul>
-  <li class="home">
-     <div class="hidden_box">
-      <time datetime="2020-12-01">【 2020.12.01 】</time>
-        <label for="label1" class="new">お知らせ</label>
-        <input type="checkbox" id="label1"/>
-        <div class="hidden_show">
-          <!--非表示ここから-->
-          	<p>お知らせの内容</p>
-          <!--ここまで-->
-        </div>
-    </div>
-  </li>
-  <li class="home">
-    <div class="hidden_box">
-      <time datetime="2020-12-01">【 2020.12.01 】</time>
-        <label for="label2" class="new">お知らせ</label>
-        <input type="checkbox" id="label2"/>
-        <div class="hidden_show">
-          <!--非表示ここから-->
-          	<p>お知らせの内容</p>
-          <!--ここまで-->
-        </div>
-    </div>
-  </li>
-
-  <li class="home">
-      <div class="hidden_box">
-      <time datetime="2020-12-01">【 2020.12.01 】</time>
-        <label for="label3">お知らせ</label>
-        <input type="checkbox" id="label3"/>
-        <div class="hidden_show">
-          <!--非表示ここから-->
-            <p>お知らせの内容</p>
-          <!--ここまで-->
-        </div>
-    </div>
-  </li>
-
-  <li class="home">
-        <div class="hidden_box">
-      <time datetime="2020-12-01">【 2020.12.01 】</time>
-        <label for="label4">お知らせ</label>
-        <input type="checkbox" id="label4"/>
-        <div class="hidden_show">
-          <!--非表示ここから-->
-            <p>お知らせの内容</p>
-          <!--ここまで-->
-        </div>
-    </div>
-  </li>
-
-
-    <li class="home">
-        <div class="hidden_box">
-        <time datetime="2020-12-01">【 2020.12.01 】</time>
-          <label for="label5">お知らせ</label>
-          <input type="checkbox" id="label5"/>
-          <div class="hidden_show">
-            <!--非表示ここから-->
-              <p>お知らせの内容</p>
-            <!--ここまで-->
+    <div class="contents">
+<!--お知らせ一覧-->
+      <div class="post">
+        <p class="title">NEWS</p>
+        <ul>
+        <li class="home">
+           <div class="hidden_box">
+            <time datetime="2020-12-01">【 2020.12.01 】</time>
+              <label for="label1" class="new">お知らせ</label>
+              <input type="checkbox" id="label1"/>
+              <div class="hidden_show">
+                <!--非表示ここから-->
+                	<p>お知らせの内容</p>
+                <!--ここまで-->
+              </div>
           </div>
-      </div>
-    </li>
-      <li class="home">
+        </li>
+        <li class="home">
           <div class="hidden_box">
-          <time datetime="2020-12-01">【 2020.12.01 】</time>
-            <label for="label6">お知らせ</label>
-            <input type="checkbox" id="label6"/>
-            <div class="hidden_show">
-              <!--非表示ここから-->
-                <p>お知らせの内容</p>
-              <!--ここまで-->
+            <time datetime="2020-12-01">【 2020.12.01 】</time>
+              <label for="label2" class="new">お知らせ</label>
+              <input type="checkbox" id="label2"/>
+              <div class="hidden_show">
+                <!--非表示ここから-->
+                	<p>お知らせの内容</p>
+                <!--ここまで-->
+              </div>
+          </div>
+        </li>
+
+        <li class="home">
+            <div class="hidden_box">
+            <time datetime="2020-12-01">【 2020.12.01 】</time>
+              <label for="label3">お知らせ</label>
+              <input type="checkbox" id="label3"/>
+              <div class="hidden_show">
+                <!--非表示ここから-->
+                  <p>お知らせの内容</p>
+                <!--ここまで-->
+              </div>
+          </div>
+        </li>
+
+        <li class="home">
+              <div class="hidden_box">
+            <time datetime="2020-12-01">【 2020.12.01 】</time>
+              <label for="label4">お知らせ</label>
+              <input type="checkbox" id="label4"/>
+              <div class="hidden_show">
+                <!--非表示ここから-->
+                  <p>お知らせの内容</p>
+                <!--ここまで-->
+              </div>
+          </div>
+        </li>
+
+
+          <li class="home">
+              <div class="hidden_box">
+              <time datetime="2020-12-01">【 2020.12.01 】</time>
+                <label for="label5">お知らせ</label>
+                <input type="checkbox" id="label5"/>
+                <div class="hidden_show">
+                  <!--非表示ここから-->
+                    <p>お知らせの内容</p>
+                  <!--ここまで-->
+                </div>
             </div>
-        </div>
-      </li>
-</ul>
+          </li>
+            <li class="home">
+                <div class="hidden_box">
+                <time datetime="2020-12-01">【 2020.12.01 】</time>
+                  <label for="label6">お知らせ</label>
+                  <input type="checkbox" id="label6"/>
+                  <div class="hidden_show">
+                    <!--非表示ここから-->
+                      <p>お知らせの内容</p>
+                    <!--ここまで-->
+                  </div>
+              </div>
+            </li>
+      </ul>
+      </div>
+
+      <!--新規注文-->
+      <div class="new_purchase">
+      <p class="title">新規注文</p>
+      <table class="history">
+      <tr>
+      <th class="left">注文日<br>2021/1/11</th>
+      <th class="left" colspan="2">配送状況：配送中<br>発送予定日：2021年2月26日<br>発送日：2021年2月26日</th>
+      </th>
+      <th class="right">合計<div class="dropdown">
+        <button class="btn dropdown-toggle" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+          2000円
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+          <li><p class="dropdown-item">注文価格：2500円</p></li>
+          <li><p class="dropdown-item">注文個数：３個</p></li>
+          <li><p class="dropdown-item">割引楽：500円</p></li>
+          <li><p class="dropdown-item">注文総額</p></li>
+        </ul>
+      </div>
+              </th>
+      </tr>
+      <tr>
+        <td colspan="2">商品名<br><a href="#">さつまいも</a></th>
+      <td class="send">お届け先　：　山田　花子（ヤマダ　ハナコ）</td>
+      <td>購入者　：　山田　太郎（ヤマダ　タロウ）</td>
+      </tr>
+      <tr>
+        <td colspan="2">商品番号<br>12345</td>
+        <td>〒123ー455<br>　お届け先住所　住所（１　住所（２ 追加住所</td>
+        <td>電話番号<br>携帯番号</td>
+      </tr>
+      <tr>
+        <td colspan="2">Qoo10商品番号<br>ABCDE</td>
+      <td>電話番号<br>携帯電話番号</td>
+      <td>メールアドレス</td>
+      </tr>
+      </table>
+      <table class="history">
+      <tr>
+      <th class="left">注文日<br>2021/1/11</th>
+      <th class="left" colspan="2">配送状況：配送中<br>発送予定日：2021年2月26日<br>発送日：2021年2月26日</th>
+      </div></th>
+      <th class="right">合計<div class="dropdown">
+        <button class="btn dropdown-toggle" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+          2000円
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+          <li><p class="dropdown-item">注文価格：2500円</p></li>
+          <li><p class="dropdown-item">注文個数：３個</p></li>
+          <li><p class="dropdown-item">割引楽：500円</p></li>
+          <li><p class="dropdown-item">注文総額</p></li>
+        </ul>
+              </th>
+      </tr>
+      <tr>
+        <td colspan="2">商品名<br><a href="#">さつまいも</a></th>
+      <td class="send">お届け先　：　山田　花子（ヤマダ　ハナコ）</td>
+      <td>購入者　：　山田　太郎（ヤマダ　タロウ）</td>
+      </tr>
+      <tr>
+        <td colspan="2">商品番号<br>12345</td>
+        <td>〒123ー455<br>　お届け先住所　住所（１　住所（２ 追加住所</td>
+        <td>電話番号<br>携帯番号</td>
+      </tr>
+      <tr>
+        <td colspan="2">Qoo10商品番号<br>ABCDE</td>
+      <td>電話番号<br>携帯電話番号</td>
+      <td>メールアドレス</td>
+      </tr>
+    </table>
+    </div>
+
 </div>
-</div>
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    </body>
-    </html>
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+　　　　　　<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</body>
+
+     </html>
