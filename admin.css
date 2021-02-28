@@ -524,10 +524,16 @@ input.hoge{
 
 .bbb{
   width: 90%;
+  margin-bottom: 30px;
+}
+
+table.bbb th,table.bbb td{
+  text-align: center;
+  padding: 20px 0;
 }
 
 table.bbb th{
-  background-color: #88a628;
+  background-color: #a9a9a9;
   color: #ffffff;
   border:solid 2px #000000;
   width: 20%;
@@ -535,7 +541,7 @@ table.bbb th{
 }
 
 table.bbb td{
-  background-color: #effff7;
+  background-color: #ffffff;
   border:solid 2px #000000;
   font-size: 18px;
   color:black;
