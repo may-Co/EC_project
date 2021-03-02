@@ -198,24 +198,6 @@ table.max th,table.max td{
 table.max tr:nth-child(odd){
   background-color: #eee
 }
-a.btn--max {
-  color: #fff;
-  background-color: #32cd32;
-  border-bottom: 5px solid #186618;
-  text-align: center;
-  width: 100px;
-  margin:20px auto;
-}
-a.btn--max:hover {
-  margin-top: 17px;
-  color: #fff;
-  background: #259925;
-  border-bottom: 2px solid #186618;;
-}
-a.btn--shadow {
-  -webkit-box-shadow: 0 3px 5px #186618;
-  box-shadow: 0 3px 5px #186618;
-}
 
 /*config_status*/
 .status0{
