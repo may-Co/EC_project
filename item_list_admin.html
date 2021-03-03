@@ -15,56 +15,27 @@ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 
 <h1>登録商品一覧</h1>
 
+<div class="itemlist">
 
-<!--並べ替え機能-->
- <div id="feas-sort-menu">
-   <div class="feas-sort-asin">
-     <p class="midashi">ASINで並び替え</p>
-     <span class="feas-sl-1-up"><a href="#">▲</a></span>
-     <span class="feas-sl-1-down"><a href="#">▼</a></span>
-   </div>
-   <div class="feas-sort-item">
-     <p class="midashi">商品名で並び替え</p>
-     <span class="feas-sl-1-up"><a href="#">▲</a></span>
-     <span class="feas-sl-1-down"><a href="#">▼</a></span>
-   </div>
-   <div class="feas-sort-category">
-     <p class="midashi">カテゴリで並び替え</p>
-     <span class="feas-sl-1-up"><a href="#">▲</a></span>
-     <span class="feas-sl-1-down"><a href="#">▼</a></span>
-   </div>
-   <div class="feas-sort-rank">
-     <p class="midashi">ランクで並び替え</p>
-     <span class="feas-sl-1-up"><a href="#">▲</a></span>
-     <span class="feas-sl-1-down"><a href="#">▼</a></span>
-   </div>
-     <div class="feas-sort-search">
-       <p class="midashi"></p>
-       <form action="#" name="search1" method="post">
-   <dl class="search1">
-     <dt><input type="text" name="search" value="" placeholder="検索するテキストを入力" /></dt>
-     <dd><button><span>検索</span></button></dd>
-   </dl>
- </form>
-     </div>
- </div>
-
-<!--検索結果一覧-->
-<div class="product">
 <table class="table">
 <thead>
 <tr>
-<th scope="col">ASIN</th>
-<th scope="col">商品名</th>
-<th scope="col">カラー</th>
-<th scope="col">サイズ</th>
-<th scope="col">カテゴリ</th>
-<th scope="col">ランク</th>
-<th scope="col">価格</th>
+    <div id="feas-sort-menu">
+<th scope="col">ASIN<span class="feas-sl-1-up"><a href="#" class="feas-sl-1-up">▲</a></span>
+  <span class="feas-sl-1-down"><a href="#" class="feas-sl-1-down">▼</a></span></th>
+<th scope="col">商品名<span class="feas-sl-1-up"><a href="#" class="feas-sl-1-up">▲</a></span>
+  <span class="feas-sl-1-down"><a href="#" class="feas-sl-1-down">▼</a></span></th>
 
+<th scope="col">カテゴリ<span class="feas-sl-1-up"><a href="#" class="feas-sl-1-up">▲</a></span>
+  <span class="feas-sl-1-down"><a href="#" class="feas-sl-1-down">▼</a></span></th>
+<th scope="col">ランク<span class="feas-sl-1-up"><a href="#" class="feas-sl-1-up">▲</a></span>
+  <span class="feas-sl-1-down"><a href="#" class="feas-sl-1-down">▼</a></span></th>
+  <th scope="col">カラー</th>
+  <th scope="col">サイズ</th>
+<th scope="col">価格</th>
+</div>
 </tr>
 </thead>
-<tbody>
 
 <tr>
 <td></td>
@@ -128,15 +99,11 @@ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 <td></td>
 </tr>
 
-
-</tbody>
-</header>
 
 </table>
+
 </div>
 </div>
-
-
 
           <!-- Optional JavaScript -->
           <!-- jQuery first, then Popper.js, then Bootstrap JS -->
