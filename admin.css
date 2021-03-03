@@ -358,52 +358,9 @@ table.ddd tbody th {
 }
 
 
-/*itemlist*/
-.product{
+/*itemlist*/.itemlist{
   padding-bottom: 30%;
 }
-
-/* ソートボタンのセクション全体に適用 */
-#feas-sort-menu {
-    text-align: left;
-    margin: 1em auto;
-    padding: 1em 0;
-    width: 1300px;
-}
-/* id=feas-sort-menu内のすべてのdivタグに適用 */
-#feas-sort-menu div{
-    display: inline-block;
-    width: 200px;
-    text-align: center;
-    border-left: 1px solid #dadee6;
-}
-/* その最初のdivタグのみに適用 */
-#feas-sort-menu div:first-child {
-    border-left: none;
-}
-
-#feas-sort-menu div:last-child-child {
-  width: 300px
-}
-/* 見出しに適用 */
-#feas-sort-menu p.midashi {
-    display: block;
-    font-weight: bold;
-    font-size: 20px;
-    color: #5d5d5d;
-    margin-bottom: 0.5em;
-    line-height: 1;
-}
-/* すべてのソートボタンに適用 */
-#feas-sort-menu span a {
-    color: white;
-    display: inline-block;
-    width: 3em;
-    background-color: #31cc55;
-    border-radius: 3px;
-    margin: 0 3px;
-}
-
 
 dl.search1{
 	position:relative;
@@ -464,10 +421,9 @@ table td {
 }
 
 table thead tr{
-  background-color: #259940;
+  background-color: #696969;
   color:#fff;
 }
-
 
 
 /*postNotification*/
