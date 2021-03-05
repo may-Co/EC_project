@@ -25,13 +25,20 @@ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
        <form method="post" enctype="multipart/form-data">
            <p>アップロードするCSVファイルを選択してください</p>
              <input type="file" id="file" multiple class="border border-dark">
-             <br>
-             <input type="radio" id="01-d" name="radio01" checked>
-             <label for="01-d" class="radio01">NGキーワード</label>
-             <input type="radio" id="01-e" name="radio01">
-             <label for="01-e" class="radio01">NG ASIN</label>
-             </div>
-                      <button type="submit" class="btn btn--blue">登録する</button>
+            <br><div class="cp_ipradio">
+           <ul>
+             <li class="list_item">
+             <label>
+             <input type="radio" class="option-input" name="cpipr06" checked >NGキーワード
+             </label>
+             <label>
+             <input type="radio" class="option-input" name="cpipr06">NG ASIN
+             </label>
+             </li>
+           </ul>
+           </div>
+                 <button type="submit" class="btn btn--blue">保存</button>
+          </div>
      </form>
 </div>
 </div>
