@@ -23,15 +23,20 @@ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
     <br>入力後、NGキーワードもしくはNG ASIN選択してください。</p>
     <textarea rows="10" id="message" placeholder="例：B00BQA11AGB075SW22KP
 例：コンラクトレンズ動物用医薬品" name="comment" class="NG"></textarea>
-   <br>
-   <input type="radio" id="01-d" name="radio01" checked>
-   <label for="01-d" class="radio01">NGキーワード</label>
-   <input type="radio" id="01-e" name="radio01">
-   <label for="01-e" class="radio01">NG ASIN</label>
-       <br>     
+    <br><div class="cp_ipradio">
+ <ul>
+   <li class="list_item">
+   <label>
+   <input type="radio" class="option-input" name="cpipr06" checked >NGキーワード
+   </label>
+   <label>
+   <input type="radio" class="option-input" name="cpipr06">NG ASIN
+   </label>
+   </li>
+ </ul>
+ </div>
        <button type="submit" class="btn btn--blue">保存</button>
-
-        </div>
+</div>
 </div>
 
     <!-- Optional JavaScript -->
