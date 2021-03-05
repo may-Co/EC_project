@@ -921,9 +921,10 @@ input.url{
 
 /*set.html*/
 
+
 .set01{
   text-align: center;
-  margin-left: 10%;
+  margin-left: 2%;
   padding-bottom: 10%;
 }
 
@@ -942,8 +943,6 @@ padding-top: 20px;
 padding-left: 15px;
 padding-right: 15px;
 padding-bottom: 0;
-border-style: solid;
-border-width: thin;
 font-size: 20px;
 }
 
@@ -967,7 +966,7 @@ a.set{
   width:200px;
   height: 200px;
   border-radius: 50%;
-  background-color: #dcdcdc;
+  background-color: #00665e;
   color:#ffffff;
   text-align: center;
 }
