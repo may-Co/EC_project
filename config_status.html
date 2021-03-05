@@ -15,43 +15,60 @@ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 
 
   <h1>ステータス変更</h1>
-  <p class="status0">変更するステータスを選択し、変更ボタンを押してください</p>
-<div class="change_status">
-  <div class="change">
-
-    <!--エラ〜メッセージ-->
-            <p class="error_message">ステータスの変更に失敗しました。<br>
-            ステータスを変更しました。</p>
-
-
   <p class="status">Qoo10用プラン</p>
   <hr>
-       <input type="radio" id="01" name="radio02" checked>
-       <label for="02" class="radio02">プラチナQプラン</label>
-       <input type="radio" id="01" name="radio02">
-       <label for="02" class="radio02">ゴールドQプラン</label>
-       <input type="radio" id="01" name="radio02">
-       <label for="02" class="radio02">スタンダードQプラン</label>
-     </div>
+  <div class="cp_ipradio">
+<ul>
+  <li class="list_item">
+  <label>
+  <input type="radio" class="option-input" name="cpipr06" checked >プラチナQプラン
+  </label>
+  <label>
+  <input type="radio" class="option-input" name="cpipr06">ゴールドQプラン
+  </label>
+  <label>
+  <input type="radio" class="option-input" name="cpipr06">スタンダードQプラン
+  </label>
+  </li>
+</ul>
+</div>
+</div>
        <div class="change">
    <p class="status">Yhoo!用プラン</p>
        <hr>
-       <input type="radio" id="01" name="radio02">
-       <label for="02" class="radio02">プラチナYプラン</label>
-       <input type="radio" id="01" name="radio02">
-       <label for="02" class="radio02">ゴールドYプラン</label>
-       <input type="radio" id="01" name="radio02">
-       <label for="02" class="radio02">スタンダードYプラン</label>
+       <div class="cp_ipradio">
+     <ul>
+       <li class="list_item">
+       <label>
+       <input type="radio" class="option-input" name="cpipr06" checked >プラチナYプラン
+       </label>
+       <label>
+       <input type="radio" class="option-input" name="cpipr06">ゴールドYプラン
+       </label>
+       <label>
+       <input type="radio" class="option-input" name="cpipr06">スタンダードYプラン
+       </label>
+       </li>
+     </ul>
+     </div>
 </div>
   <div class="change">
    <p class="status">Qoo10 & Yahoo! 用プラン</p>
-       <hr>
-       <input type="radio" id="01" name="radio02">
-       <label for="02" class="radio02">プラチナQYプラン</label>
-       <input type="radio" id="01" name="radio02">
-       <label for="02" class="radio02">ゴールドQYプラン</label>
-       <input type="radio" id="01" name="radio02">
-       <label for="02" class="radio02">スタンダードQYプラン</label>
+       <hr>  <div class="cp_ipradio">
+       <ul>
+         <li class="list_item">
+         <label>
+         <input type="radio" class="option-input" name="cpipr06" checked >プラチナQYプラン
+         </label>
+         <label>
+         <input type="radio" class="option-input" name="cpipr06">ゴールドQYプラン
+         </label>
+         <label>
+         <input type="radio" class="option-input" name="cpipr06">スタンダードQYプラン
+         </label>
+         </li>
+       </ul>
+       </div>
        <br>
        <button type="button" class="btn btn-success btn-lg">変更</button>
 </div>
