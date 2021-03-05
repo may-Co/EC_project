@@ -448,28 +448,33 @@ a.btn--yellow:hover{
 .price_set{
   padding-bottom: 100px;
 }
-.reference{
-  font-size: 20px;
-  text-align: center;
+div.reference{
+  padding: 20px 10px;
   margin: 30px auto;
-  padding-top: 60px;
-  background-color: #ffffff;
-  width:80%;
-  height: 580px;
+  background-color: #ffefe0;
+  text-align: center;
+  width: 90%;
+  font-size: 24px;
+  font-weight: bold;
 }
 
-.reference_title{
-  font-weight: bold;
-  font-size: 24px;
+p.reference{
+  font-weight: normal;
+  font-size: 18px;
+  text-align: center;
 }
 
 .reference_input{
   text-align: center;
-  background-color: #e6fffd;
-  padding: 30px 30px;
+  background-color: #ffffff;
+  padding: 30px 20px;
   font-size: 18px;
-  width: 60%;
+  width: 50%;
   margin:20px auto;
+}
+
+.reference_percent{
+  background-color: #f5f5f5;
 }
 
 /*signup*/
