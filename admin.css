@@ -200,10 +200,66 @@ table.max tr:nth-child(odd){
 }
 
 /*config_status*/
+
+
+.cp_ipradio {
+	width: 90%;
+	margin: 2em auto;
+}
+.cp_ipradio ul {
+	margin: 0.5rem 0.5rem 2rem 0.5rem;
+	padding: 0.5rem 1rem;
+	list-style: none;
+}
+.cp_ipradio .list_item {
+	margin: 0 0 0.5rem 0;
+	padding: 0;
+}
+.cp_ipradio label {
+	line-height: 135%;
+	position: relative;
+	margin: 0.5rem;
+	cursor: pointer;
+}
+.cp_ipradio .option-input {
+	position: relative;
+	margin: 0 1rem 0 0;
+	cursor: pointer;
+}
+.cp_ipradio .option-input:before,
+.cp_ipradio .option-input:after {
+	position: absolute;
+	z-index: 1;
+	top: -0.125rem;
+	left: -0.125rem;
+	width: 1rem;
+	height: 1rem;
+	content: '';
+	-webkit-transition: all 0.3s ease-in-out;
+	        transition: all 0.3s ease-in-out;
+	border-radius: 50%;
+	background: #ffffff;
+}
+.cp_ipradio .option-input:after {
+	z-index: 0;
+	top: -0.25rem;
+	left: -0.25rem;
+	width: 1.25rem;
+	height: 1.25rem;
+	background: #00ab9e;
+}
+
+.cp_ipradio .option-input:checked:before {
+	-webkit-transform: scale(0, 0);
+	        transform: scale(0, 0);
+}
+
 .status0{
   text-align: center;
   font-size: 20px;
   margin-top: 20px;
+  display: none;
+  padding-bottom: 0px;
 }
 
 p.status{
@@ -216,18 +272,14 @@ p.status{
 
 .change{
   margin:20px auto;
-  width: 800px;
+  width: 900px;
   text-align: center;
   margin-bottom: 50px;
 }
 
-.btn-success{
-  margin:20px auto;
-  text-align: center;
-}
-
 .status{
   margin-top:30px;
+  font-size: 20px;
 }
 
 
