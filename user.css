@@ -244,6 +244,10 @@ padding-left: 28%;
   margin-top: 30px;
 }
 
+.continue_login{
+  text-align: center;
+  padding-top: 10px;
+}
 
 /*アカウント登録　接続状態*/
 p.connection_box{
