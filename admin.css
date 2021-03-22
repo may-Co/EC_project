@@ -478,6 +478,29 @@ table thead tr{
 }
 
 
+span.feas-sl-1-up{
+    margin-left: 20px;
+}
+
+span.feas-sl-1-up ,span.feas-sl-1-down{
+    display: inline-block;
+    border-style: solid;
+    border-color: #ffffff;
+    border-radius: 6px;
+    border-width: thin;
+    text-align: center;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+a.feas-sl-1-up,a.feas-sl-1-down{
+  color:#ffa500;
+}
+
+a.feas-sl-1-up:hover ,a.feas-sl-1-down:hover{
+  color: #f78800;
+  text-decoration: none;
+}
+
 /*postNotification*/
 textarea{
   width: 800px;
